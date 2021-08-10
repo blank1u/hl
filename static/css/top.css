@@ -1,0 +1,133 @@
+/*头部 start*/
+.top_main{width:100%;height:38px;background-color:#f7f7f7;color:#3C3C3C;border-bottom: 1px solid #ececec;}
+.top{width:1200px;height:38px;margin:0 auto;font-size:12px;}
+.top_left{float:left;line-height:38px;}
+
+/**/
+.tou-top-ry{float:right;}
+.tou-top-ry ul{}
+.tou-top-ry ul li{float:left;height:38px;line-height:38px;padding:0px 22px;margin-left:5px;}
+
+.tou-top-ry ul li.lkua{border:1px solid #e71f19;height:38px;line-height:38px;color:#e71f19;border-radius: 8px;}
+.tou-top-ry ul li.lkua a{font-size:12px;color:#e71f19;}
+.tou-top-ry ul li.lkua a:hover{font-size:12px;color:#e71f19;}
+
+.tou-top-ry ul li.lshi{background-color:#e71f19;border-radius: 8px;}
+.tou-top-ry ul li.lshi a{font-size:12px;color:#fff;}
+.tou-top-ry ul li.lshi a:hover{font-size:12px;color:#fff;}
+
+
+.tou-top-dz{float:right;width:205px;height:38px;}
+.tou-top-denglu{width:95px;height:38px;float:left;}
+.tou-top-denglu a{display:block;width:95px;height:38px;text-align:center;line-height:38px;color:#fff;font-size:14px;border-radius: 8px;
+box-shadow: -0.674853px 2.92311px 5px rgba(0, 0, 0, 0.33);background:#e71f19;}
+.tou-top-zhuce{width:95px;height:38px;float:left;margin-left:15px;}
+.tou-top-zhuce a{display:block;width:93px;height:36px;text-align:center;line-height:36px;font-size:14px;background-color:#fff;color:#e71f19;border:1px solid #e71f19;    border-radius: 8px;
+box-shadow: -0.674853px 2.92311px 5px rgba(0, 0, 0, 0.33);}
+.tou-top-dz span{
+    margin: 0;
+    padding: 0;
+    width:50px;
+    height:20px;
+    margin:0 auto;
+    display:block;
+    padding-top: 9px;}
+.tou-top-dz em{
+    font-style: normal;
+    float:left;
+    height:14px;
+    line-height:14px;
+    padding-top:3px;
+    }
+.tou-top-dz i{
+    float:left;
+    font-style: normal;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 5px;}
+
+/**/
+
+.top_right{float:right;line-height:34px;}
+.top_right span{display:block;float:left;padding-left:20px;}
+.top_right span a{color:#e71f19;}
+.top_right span a:hover,.top_right span a.cur{color: #e71f19;}
+
+
+.header_main{width:100%;height:90px;}
+.header{width:1200px;height:64px;margin:0 auto;padding:13px 0px;}
+.hlogo{height:64px;float:left;width: 185px;}
+.hlogo img{height:64px;}
+.hdh{float:left;height:40px;padding:10px 0px;padding-left:20px;}
+.hdh ul li{float:left;height:40px;padding:0px 10px;}
+.hdh ul li a{display:block;height:40px;padding:0px 20px;color:#e71f19;text-align:center;line-height:40px;
+font-size:16px;}
+.hdh ul li a.cur,.hdh ul li a:hover{background:#e71f19;color:#f6f6f6;    border-radius: 5px;}
+
+.hrt{float:right;padding:10px 0px;}
+.hrt span{display:block;float:left;padding-left:20px;}
+.hrt span a{display:block;height:40px;font-size:14px;line-height:40px;padding:0px 20px;background:#e71f19;
+border-radius: 5px;color:#fff;}
+
+.hdianhua{
+    height: 40px;
+    padding-left: 52px;
+    background: url(http://www.maoyanmedia.com/static/image/tel.png) no-repeat left center;
+    margin-top: 11px;
+    float:right;
+}
+.hdianhua span{display:block;}
+/**/
+.hd_search{position: relative;
+    margin: 12px 0px 0 175px;
+    width: 500px;
+    float: left;}
+.hd_search input[type='text'] {
+    width:428px;
+    height: 38px;
+    border-radius: 0px;
+    line-height: 38px;
+    padding-left: 10px;
+	border: 1px solid #e71f19;
+	    outline: none;
+}
+.hd_search input[type='submit']{
+    position: absolute;
+    border: none;
+    background: url(http://www.maoyanmedia.com/static/image/iconfoo.png) #e71f19 20px 10px no-repeat;
+    right: 0px;
+    top: 0px;
+    width: 60px;
+    height: 40px;
+}
+
+.hdul_main{width:1200px;height:50px;margin:0 auto;}
+.hdul{}
+.hdul ul{}
+.hdul ul li{
+      width: 130px;
+    padding: 0px 10px;
+	min-width: 80px;
+	float:left;
+}
+.hdul ul li a{
+    display:block;
+      font-size: 16px;
+    color: #e71f19;
+    text-align: center;
+    background: #fff;
+	height:50px;
+	line-height:50px;
+}
+.hdul ul li a:hover{
+    color: #fff;
+    background: #e71f19;
+    border-radius: 5px;
+}
+.hdul ul li a.hover{
+       color: #fff;
+    background: #e71f19;
+    border-radius: 5px;
+	
+}
+/*头部 end*/

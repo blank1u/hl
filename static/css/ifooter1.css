@@ -1,0 +1,115 @@
+/* 把所有的标签的内外边距清零 */
+*{
+    margin:0;padding:0
+}
+/* em和i斜体的文字不倾斜 */
+em,i{
+	font-style:normal
+}
+/* 去掉li的小圆点 */
+li{
+	list-style:none
+}
+
+
+
+/*******************/
+.ifooter{
+   width:100%;
+   height:auto;
+   overflow:hidden;
+   background: #000;
+   box-sizing: initial;
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: inherit;
+}
+.ifooter_main{width:1130px;height:auto;overflow:hidden;margin:0 auto;padding-top:40px;padding-bottom:25px;}
+.ifooter_one{float:left;width:80px;padding:0px 60px;
+box-sizing: initial;
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: inherit;
+border-right: 1px solid #1f1f1f;}
+.ifooter_one span{display:block;font-size:16px;color:#fff;height:35px;line-height:35px;font-weight: bold;padding-bottom: 10px;}
+.ifooter_one ul{}
+.ifooter_one ul li{height:35px;line-height:35px;font-size:14px;}
+.ifooter_one ul li a{text-decoration: none;color: #f3f3f3;}
+.ifooter_one ul li a:hover{color:#fff;}
+
+.ifooter_two{float:left;width:270px;height:auto;overflow:hidden;    padding: 0px 10px;
+box-sizing: initial;
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: inherit;
+    padding-left: 60px;}
+.ifooter_two span{display:block;font-size:16px;color:#fff;height:35px;line-height:35px;font-weight: bold;padding-bottom: 10px;}
+.ifooter_two ul{}
+.ifooter_two ul li{height:35px;line-height:35px;font-size:14px;color:#f3f3f3;padding-left:35px;}
+.if1{background:url('http://www.maoyanmedia.com/static/images/if1.png') no-repeat left center;}
+.if2{background:url('http://www.maoyanmedia.com/static/images/if2.png') no-repeat 5px center;}
+.if3{background:url('http://www.maoyanmedia.com/static/images/if3.png') no-repeat left center;}
+.if4{background:url('http://www.maoyanmedia.com/static/images/if4.png') no-repeat left center;}
+
+.ifooter_thr{float:left;
+    box-sizing: initial;
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: inherit;}
+.ifooter_thr_model{float:left;padding-left:30px;}
+.ifooter_thr_model span{display:block;font-size:16px;color:#fff;height:35px;line-height:35px;font-weight: bold;text-align:center;padding-bottom: 10px;}
+.ifooter_thr_model p{display:block;width:140px;height:140px;}
+.ifooter_thr_model img{width:140px;height:140px;}
+
+.ifooter_four{float:left;width:630px;height:45px;
+box-sizing: initial;
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: inherit;
+        padding-top: 25px;
+   padding-left: 50px;}
+
+.ifooter_four span{display:block;width:100px;height:34px;float:left;padding-left:10px;padding-right: 50px;
+box-sizing: initial;
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: inherit}
+.ifooter_four span img{100px;height:34px;}
+
+.ifooter_five{float:left;width:100%;height:40px;line-height:40px;text-align:center;color:#f3f3f3;font-size:14px;padding-top:30px;
+box-sizing: initial;
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: inherit;}
+.ifooter_five a{color:#f3f3f3;font-size:14px;}
+.ifooter_five a:hover{color:#f3f3f3;}
+
+
+/*右侧浮动*/
+.right_nav{ right:0; bottom:100px; position:fixed; text-align:left;overflow: hidden;z-index:999;
+box-sizing: initial;
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: inherit;
+  top: 30%;
+  width:121px;
+}
+.right_nav li{background:#e71f19;margin:4px 0;padding: 10px;border-top-left-radius: 4px;border-bottom-left-radius: 4px;cursor:pointer;position:relative; right: -70px;width:121px;
+-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.right_nav li .iconBox{text-align: center;overflow: hidden;display: flex;align-items: center;justify-content: space-between;background-color: #e71f19;
+    border-bottom: 0px;}
+.right_nav li img{width: 30px;height:30px;}
+.right_nav li h4{color: #fff;font-size:14px;margin:2px 0;margin-left: 15px;}
+.right_nav li:hover{background:#e71f19}
+.right_nav li .hideBox{display: none;position: absolute;right:120px;padding:10px;padding-right: 15px; top:-10px;z-index: 999;width: 170px;
+box-sizing: initial;
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: inherit;}
+.right_nav li .hideBox .hb{border: 1px solid #ccc;background-color: #fff; padding: 10px 20px;border-top: 2px solid #0085cd;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;}
+.right_nav li .hideBox .hb h5{padding: 5px 0;border-bottom: 2px solid #ccc;color: #0085cd;font-size: 16px;font-weight: 400;display: block;white-space: nowrap;}
+.right_nav li .hideBox .hb p {margin-top: 5px;font-size: 18px;font-weight: 700;}
+.right_nav li .hideBox .hb .qqtalk{margin-top: 10px;}
+.right_nav li .hideBox .hb .qqtalk a{display: flex;align-items: center}
+.right_nav li .hideBox .hb .qqtalk img{width: 25px;height:25px;}
+.right_nav li .hideBox .hb .qqtalk p{font-size: 14px;font-weight: 400;white-space: nowrap;margin-top: -5px;margin-left: 5px;}
+.right_nav li:nth-child(3) .hideBox img{width:128px;height: 128px;margin-top: 10px;}
+.right_nav li h4 a{color:#fff;}
+.right_nav li h4 a:hover{color:#fff;}
+.right_nav li h5 a{color:#fff;}
+.right_nav li h5 a:hover{color:#fff;}
+

@@ -1,0 +1,797 @@
+
+/* 4eb6ff */
+
+/*========================================
+             全局样式设定
+=========================================*/
+/*html {width:100%; overflow-x:hidden;}*/
+html {height:100%;}
+body {margin:0; padding:0; width:100%; overflow-x:hidden; height:100%; overflow-y:auto; font-family:"microsoft yahei"; font-size:12px; background:#fff; color:#666;}
+ul,ol,li,dl,dt,dd,form,label,h1,h2,h3,h4,h5,h6,button,input[type="text"],input[type="tel"],input[type="password"],textarea,select,i {margin:0; padding:0; list-style:none; outline:none; font-family:"microsoft yahei";}
+ul, ul li {display:inline-block;}
+img {display:block; border:none;}
+a {text-decoration:none; color:#666; cursor:pointer;}
+a:hover {color:#4eb6ff;}
+
+
+/*========================================
+             全局公用样式
+=========================================*/
+.hide {display:none;}
+.show {display:block;}
+.clear {height:0; clear:both;}
+.clearRight {height:0; clear:right;}
+.clearLeft {height:0; clear:left;}
+.overScroll {overflow-y:scroll;}
+.overHidden {overflow-y:hidden;}
+.textOverFlow {width:100%; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.tran03 {-webkit-transition:all .3s; transition:all .3s;}
+input[type="checkbox"].none, input[type="radio"].none, input[type="text"].none, input[type="password"].none {position:fixed; left:-9999px; top:50%;}
+.table table {width:100%;}
+.fixedTop {position:fixed; top:0;}
+.fixedBottom {position:fixed; bottom:0;}
+/* 清除浮动类 .clearfix */
+.clearfix:before, .clearfix:after {content:""; display:table;}
+.clearfix:after  {clear:both;}
+
+/*========================================
+           提示浏览器版本过低
+=========================================*/
+.top-tip-boswer {height:36px; line-height:36px; border:1px #d5d583 solid; background:#ffffdb; color:#d00; text-align:center; font-size:16px;}
+.top-tip-boswer a {color:#4eb6ff;}
+
+
+.hoverTip {display:inline-block; position:relative; text-indent:0;}
+.hoverTip:before {display:block; width:13px; height:13px; line-height:13px; text-align:center; border:1px #aaa solid; border-radius:50%; font-size:10px; background:#fff; color:#999; cursor:pointer; content:"?";}
+.hoverTip > * {position:absolute; visibility:hidden; width:160px; padding:5px 10px; font-weight:normal; color:#333; background:#fff; border-radius:5px; -webkit-box-shadow:0 0 13px #ccc; box-shadow:0 0 13px #ccc; z-index:11;}
+.hoverTip > * > img {width:100%;}
+.hoverTip:hover > * {visibility:visible;}
+.hoverTip > * > i {position:absolute; width:10px; height:10px; background:#fff;}
+.hoverTip.tr > * > i,
+.hoverTip.tl > * > i,
+.hoverTip.tc > * > i {
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+.hoverTip.br > * > i,
+.hoverTip.bl > * > i,
+.hoverTip.bc > * > i {
+  -webkit-transform:rotate(-135deg);
+  transform:rotate(-135deg);
+}
+.hoverTip > *, .hoverTip > * > i {border:1px #aaa solid;}
+.hoverTip > * > i {border-left:0; border-top:0;}
+.hoverTip.br > * {top:100%; margin-top:8px; left:0; margin-left:-8px;}
+.hoverTip.br > * > i {top:-6px; left:10px;}
+.hoverTip.bl > * {top:100%; margin-top:8px; right:0; margin-right:-8px;}
+.hoverTip.bl > * > i {top:-6px; right:10px;}
+.hoverTip.bc > * {top:100%; margin-top:8px; left:50%; margin-left:-90px;}
+.hoverTip.bc > * > i {top:-6px; left:50%; margin-left:-5px;}
+.hoverTip.tr > * {bottom:100%; margin-bottom:8px; left:0; margin-left:-8px;}
+.hoverTip.tr > * > i {bottom:-6px; left:10px;}
+.hoverTip.tl > * {bottom:100%; margin-bottom:8px; right:0; margin-right:-8px;}
+.hoverTip.tl > * > i {bottom:-6px; right:10px;}
+.hoverTip.tc > * {bottom:100%; margin-bottom:8px; left:50%; margin-left:-90px;}
+.hoverTip.tc > * > i {bottom:-6px; left:50%; margin-left:-5px;}
+.hoverTip.img > * {width:220px; padding:10px;}
+.hoverTip.img.bc > * {margin-left:-120px;}
+.hoverTip.img.cc > * {margin-left:-120px;}
+
+/*========================================
+                 网页宽度
+=========================================*/
+.mainWidth {position:relative; width:1200px; margin:0 auto;}
+
+/*========== 公用绝对居中弹框 ==========*/
+input[type="checkbox"].none.popMid {position:fixed; top:50%; left:-9999px;}
+div.popMid {display:none; position:relative;}
+div.popMid > .bg {position:fixed; z-index:11; display:table; width:100%; height:100%; top:0; left:0; background:rgba(0,0,0,.4); background:url(https://www.ycqtg.com/static/index/weib/front/public/images/opacity/black4.png)\9;}
+div.popMid > .bg > .cell {position:relative; width:100%; height:100%; display:table-cell; vertical-align:middle;}
+div.popMid > .bg > .cell > .midBox {position:relative; display:table; margin:0 auto; overflow:hidden;}
+div.popMid > .bg > .cell > .midBox.white {background:#fff;}
+div.popMid > .bg > .cell > .midBox.black {background:#000;}
+div.popMid > .bg > .cell > .midBox.radius {border-radius:5px;}
+div.popMid > .bg > .cell > .midBox > .popTit {height:40px; line-height:40px; font-size:18px; text-align:center;}
+div.popMid > .bg > .cell label.close {position:absolute; z-index:3; top:0; right:0; width:40px; height:40px; line-height:40px; text-align:center; font-size:2.8em; cursor:pointer;}
+div.popMid > .bg > .cell label.close.trans {color:#333;}
+div.popMid > .bg > .cell label.close.black {color:#fff; background:rgba(0,0,0,.7);}
+div.popMid > .bg > .cell label.close:before {content:"×";}
+input[type="checkbox"].none.popMid:checked + div.popMid {display:block;}
+
+/*========== 公用弹出确认框 ==========*/
+.popMid._confirm_ .title {height:15px;}
+.popMid._confirm_ .box {width:360px;}
+.popMid._confirm_ .box .con {display:table; margin:0 auto; padding:10px 0;}
+.popMid._confirm_ .box .con i {float:left; margin-right:10px; width:70px; height:70px; background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-res-confirm2.png) no-repeat;}
+.popMid._confirm_ .box .con b {height:55px; line-height:36px; font-size:1.4em; font-weight:normal; color:#333;}
+.popMid._confirm_ .box .con span {font-size:1.15em; color:#999;}
+.popMid._confirm_ .box .btnArea {display:table; margin:0 auto; padding:10px 0; margin-bottom:10px;}
+.popMid._confirm_ .box .btnArea > *.btn {display:inline-block; margin:0 8px; height:36px; line-height:36px; text-align:center; width:100px; border-radius:4px; color:#fff; cursor:pointer;}
+.popMid._confirm_ .box .btnArea > *.btn.red {background:#f66;}
+.popMid._confirm_ .box .btnArea > *.btn.gray {background:#999;}
+.popMid._confirm_ .box .btnArea > *.btn.blue {background:#4eb6ff;}
+
+/*========== 公用弹出层 ==========*/
+.popMid._tips_ .con {height:50px; line-height:50px; margin:0 30px; font-size:1.25em; color:#333;}
+div.popMid._tips_ > .bg {z-index:12;}
+.popMid._tips_ .con.ok,
+.popMid._tips_ .con.error {position:relative; padding-left:25px;}
+.popMid._tips_ .con.ok:before,
+.popMid._tips_ .con.error:before {position:absolute;}
+.popMid._tips_ .con.ok:before,
+.popMid._tips_ .con.error:before {width:20px; height:20px; line-height:20px; left:0; top:50%; margin-top:-10px; font-size:11px; text-align:center; border-radius:50%; color:#fff;}
+.popMid._tips_ .con.ok:before {background:green; content:"✔";}
+.popMid._tips_ .con.error:before {background:red; content:"✖";}
+
+/*========== 公用弹出层 - 带确认按钮的 ==========*/
+.popMid._alert_ .popTit:before {content:"提示";}
+.popMid._alert_ .con {min-width:250px; font-size:1.2em; line-height:22px; text-align:center; padding:10px 20px; color:#333;}
+.popMid._alert_ .btnArea {display:table; margin:0 auto; padding:5px 0; margin-bottom:10px;}
+.popMid._alert_ .btnArea > *.btn {display:inline-block; margin:0 8px; height:36px; line-height:36px; text-align:center; width:100px; border-radius:4px; color:#fff; cursor:pointer;}
+.popMid._alert_ .btnArea > *.btn:before {content:"确定";}
+.popMid._alert_ .btnArea > *.btn.red {background:#f66;}
+
+
+/*========== 公用弹出层 - 站内信 ==========*/
+.popMid._USRNOTICE_ .contain {width:700px; padding:20px;}
+.popMid._USRNOTICE_ .contain > .head {border-bottom:1px #ddd dashed; margin-bottom:15px;}
+.popMid._USRNOTICE_ .contain > .head > .title {margin:0 50px; text-align:center; font-size:18px; font-weight:bold; color:#222;}
+.popMid._USRNOTICE_ .contain > .head > .typeDate {display:table; margin:0 auto;}
+.popMid._USRNOTICE_ .contain > .head > .typeDate > * {display:inline-block; margin:0 10px; height:30px; line-height:30px; font-size:13px; opacity:.7;}
+.popMid._USRNOTICE_ .contain > .head > .typeDate > *.type:before {content:"消息类型：";}
+.popMid._USRNOTICE_ .contain > .head > .typeDate > *.beginDate:before {content:"发布时间：";}
+.popMid._USRNOTICE_ .contain > .body {max-height:400px; overflow-y:auto;}
+.popMid._USRNOTICE_ .contain > .body > .con {font-size:14px;}
+.popMid._USRNOTICE_ .contain > .body > .con img {max-width:100%; margin:0 auto;}
+
+
+/*==================================================
+                    弹出层样式
+==================================================*/
+/*<div class="popLayer">
+  <div class="con">
+    <div class="box">
+    </div>
+  </div>
+</div>*/
+/*----- 弹出层背景 -----*/
+.popLayer {position:fixed; display:table; width:100%; height:100%; left:0; top:0; background:rgba(0,0,0,.4); background/*\**/:url(https://www.ycqtg.com/static/index/weib/front/public/images/bg-black-04.png) \9; z-index:21; visibility:hidden; opacity:0;}
+.popLayer .con {height:100%; width:100%; display:table-cell; vertical-align:middle;}
+/*--- 内容框 ---*/
+.popLayer .con .box {margin:0 auto; padding:25px; background:#fff; border-radius:5px; position:relative;
+-webkit-box-shadow:0 0 10px #666;
+-ms-box-shadow:0 0 10px #666;
+box-shadow:0 0 10px #666;}
+#popLayer:checked + .popLayer {visibility:visible; opacity:1;}
+/*------- 右上角关闭 -------*/
+.popLayer .con .box .close {position:absolute; top:10px; right:10px; z-index:5;}
+.popLayer .con .box .close label {float:right; width:26px; height:26px; line-height:26px; color:#333; font-size:2em; text-align:center; cursor:pointer;}
+.popLayer .con .box .close label:before {content:"×";}
+
+/*<div class="popLayer2">
+  <div class="back">
+    <div class="cell">
+      <div class="box">
+      </div>
+    </div>
+  </div>
+</div>*/
+.popLayer2 {display:none;}
+.popLayer2 .back {position:fixed; display:table; width:100%; height:100%; left:0; top:0; background:rgba(0,0,0,.4); background/*\**/:url(https://www.ycqtg.com/static/index/weib/front/public/images/bg-black-04.png) \9; z-index:21;}
+.popLayer2 .back .cell {height:100%; width:100%; display:table-cell; vertical-align:middle;}
+.popLayer2 .back .cell .box {margin:0 auto; padding:25px; background:#fff; border-radius:5px; position:relative;
+-webkit-box-shadow:0 0 10px #666;
+-ms-box-shadow:0 0 10px #666;
+box-shadow:0 0 10px #666;}
+.popLayer2 .back .cell .box {display:none;}
+.popLayer2 .box .times {position:absolute; top:10px; right:10px; width:26px; height:26px; line-height:26px; color:#333; font-size:2em; text-align:center; cursor:pointer; z-index:5;}
+.popLayer2 .box .times:before {content:"×";}
+.popLayer2 .box .con {display:none;}
+
+.popLayer3 {position:fixed; width:100%; height:100%; top:-100%; left:0%; opacity:0; z-index:21;}/* visibility:hidden;*/
+.popLayer3 .back {display:table; width:100%; height:100%; background:rgba(0,0,0,.4); background/*\**/:url(https://www.ycqtg.com/static/index/weib/front/public/images/bg-black-04.png) \9; z-index:21;}
+.popLayer3 .back .cell {height:100%; width:100%; display:table-cell; vertical-align:middle;}
+.popLayer3 .back .cell .box {margin:0 auto; padding:25px; background:#fff; border-radius:5px; position:relative;
+-webkit-box-shadow:0 0 10px #666;
+-ms-box-shadow:0 0 10px #666;
+box-shadow:0 0 10px #666;}
+.popLayer3 .box .times {position:absolute; top:10px; right:10px; width:26px; height:26px; line-height:26px; color:#333; font-size:2em; text-align:center; cursor:pointer; z-index:5;}
+.popLayer3 .box .times:before {content:"×";}
+.popLayer3 .box .con {height:auto; visibility:visible;}
+.popLayer3 .box .con.hides {height:0; overflow:hidden; visibility:hidden;}
+
+
+.popLayer2 .box .con .text,
+.popLayer3 .box .con .text {text-align:center; padding:5px 0;}
+.popLayer2 .box .con .text.tit {font-size:1.3em; font-weight:bold;}
+.popLayer3 .box .con .text.tit {font-size:1.3em; padding-bottom:15px;}
+.popLayer2 .box .con .text.txt,
+.popLayer3 .box .con .text.txt {font-size:1.25em; line-height:24px;}
+.popLayer2 .box .con .text.blue,
+.popLayer3 .box .con .text.blue {color:#4eb6ff;}
+.popLayer2 .box .con .text.red,
+.popLayer3 .box .con .text.red {color:#f66;}
+.popLayer2 .box .con .text.gray,
+.popLayer3 .box .con .text.gray {color:#a2a2a2;}
+.popLayer2 .box .con .text.black,
+.popLayer3 .box .con .text.black {color:#333;}
+.popLayer2 .box .con .btn,
+.popLayer3 .box .con .btn {text-align:center; padding-top:15px;}
+.popLayer2 .box .con .btn a,
+.popLayer3 .box .con .btn a {display:inline-block; width:140px; height:40px; line-height:40px; margin:0 5px; border-radius:6px; text-align:center; font-size:1.25em; color:#fff;}
+.popLayer2 .box .con .btn a.red,
+.popLayer3 .box .con .btn a.red {background:#f66;}
+.popLayer2 .box .con .btn a.green,
+.popLayer3 .box .con .btn a.green {background:#1bcd2a;}
+.popLayer2 .box .con .btn a.blue,
+.popLayer3 .box .con .btn a.blue {background:#4eb6ff;}
+.popLayer2 .box .con .btn a.gray,
+.popLayer3 .box .con .btn a.gray {background:#999;}
+
+
+/*==================================================
+                  弹框图片广告
+==================================================*/
+#popAdImg.none {position:fixed; top:50%; left:-9999px;}
+.popAdImg {visibility:hidden;}
+.popAdImg .bg {position:fixed; display:table; z-index:11; width:100%; height:100%; left:0; top:0; background:rgba(0,0,0,.4);}
+.popAdImg .bg .cell {width:100%; height:100%; display:table-cell; vertical-align:middle;}
+.popAdImg .bg .cell .box {display:table; margin:0 auto;}
+.popAdImg .bg .cell .box .adImg {position:relative;}
+.popAdImg .bg .cell .box .adImg > label.close {position:absolute; top:0; right:0; width:50px; height:50px; line-height:50px; text-align:center; background:rgba(0,0,0,.5); color:#fff; font-size:3.5em; cursor:pointer;}
+.popAdImg .bg .cell .box .adImg img {animation:imgZoom0 .5s ease; -moz-animation:imgZoom0 .5s ease; -webkit-animation:imgZoom0 .5s ease; -o-animation:imgZoom0 .5s ease;}
+@keyframes imgZoom0{from{max-width:800px;}to{max-width:0;}}
+@-webkit-keyframes imgZoom0{from{max-width:800px;}to{max-width:0;}}
+#popAdImg:checked + .popAdImg {visibility:visible;}
+#popAdImg:checked + .popAdImg img {max-width:800px; animation:imgZoom1 .5s ease; -moz-animation:imgZoom1 .5s ease; -webkit-animation:imgZoom1 .5s ease; -o-animation:imgZoom1 .5s ease;}
+@keyframes imgZoom1{from{max-width:0;}to{max-width:800px;}}
+@-webkit-keyframes imgZoom1{from{max-width:0;}to{max-width:800px;}}
+
+
+._ss_ .ss {position:relative; min-width:50px; min-height:50px;}
+._ss_ .ss .zoom {overflow:hidden; animation:imgZoom0 .5s ease; -moz-animation:imgZoom0 .5s ease; -webkit-animation:imgZoom0 .5s ease; -o-animation:imgZoom0 .5s ease;}
+@keyframes imgZoom0{from{max-width:800px;}to{max-width:0;}}
+@-webkit-keyframes imgZoom0{from{max-width:800px;}to{max-width:0;}}
+#_ss_:checked + ._ss_ .ss .zoom {max-width:800px; animation:imgZoom1 .5s ease; -moz-animation:imgZoom1 .5s ease; -webkit-animation:imgZoom1 .5s ease; -o-animation:imgZoom1 .5s ease;}
+@keyframes imgZoom1{from{max-width:0;}to{max-width:800px;}}
+@-webkit-keyframes imgZoom1{from{max-width:0;}to{max-width:800px;}}
+
+
+
+
+/*==================================================
+                  确定OR取消
+==================================================*/
+.the-popDel {width:250px;}
+.the-popDel .ask {height:30px; text-align:center; font-size:1.1em; color:#666;}
+.the-popDel .btns .btns-box {display:table; margin:0 auto;}
+.the-popDel .btns .btns-box label {display:inline-block; margin:0 5px; width:90px; height:36px; line-height:36px; text-align:center; font-size:1.2em; border-radius:6px; cursor:pointer;}
+.the-popDel .btns .btns-box label.ok {background:#f66; color:#fff;}
+.the-popDel .btns .btns-box label.cancel {background:#e9e9e9; color:#999;}
+#popDel:checked + .popLayer.popDel {visibility:visible; opacity:1;}
+
+/* login module */
+.wrap-login {position: relative;top: 0; z-index: 8;}
+.wrap-login .loginbox .code > * {display: inline-block; vertical-align: middle;}
+.wrap-login .logon,
+.wrap-login .positioning-div {background: url("https://www.ycqtg.com/page/images/index/bg_2.png") no-repeat;}
+.wrap-login .logon {text-align: center; position:absolute; right:0px; top:-380px; z-index: 100; width:270px; height: 360px; background-size: 270px 360px; color: #fff; border-radius: 15px;}
+.wrap-login .positioning-div {background-size: 280px 220px;}
+.wrap-login .illustrate > div:last-child {display: none;}
+.logon .loginBtn button.smsBtn {display: none;}
+.wrap-login #login-sms {display: none;}
+
+/*==================================================
+                  全站通用LOADING
+==================================================*/
+/*
+<div class="pageLoading">
+  <div class="circle1"></div><div class="circle2"></div>
+    <div class="text"><span>正在努力为您加载... 请稍等</span></div>
+</div>
+*/
+.pageLoading {position:fixed; width:100%; height:100%; left:0; top:0; background:rgba(255,255,255,.1); z-index:11; display:none;}
+.pageLoading .circle1, .pageLoading .circle2 {position:absolute; left:50%; bottom:55%; border-radius:50%;}
+.pageLoading .circle1 {width:50px; height:50px; margin-left:-28px; margin-bottom:10px; border:3px rgba(78,182,255,1) solid; border-right-color:rgba(255,255,255,0);
+animation:circle1 .9s ease infinite;
+-moz-animation:circle1 .9s ease infinite;
+-webkit-animation:circle1 .9s ease infinite;
+-o-animation:circle1 .9s ease infinite;}
+@keyframes circle1{from{-webkit-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);transform:rotate(360deg);}}
+@-webkit-keyframes circle1{from{-webkit-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);transform:rotate(360deg);}}
+.pageLoading .circle2 {width:30px; height:30px; margin-left:-16px; margin-bottom:22px; border:1px rgba(78,182,255,.8) solid; border-left-color:rgba(255,255,255,0);
+animation:circle2 2s linear infinite;
+-moz-animation:circle2 2s linear infinite;
+-webkit-animation:circle2 2s linear infinite;
+-o-animation:circle2 2s linear infinite;}
+@keyframes circle2{from{-webkit-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);}}
+@-webkit-keyframes circle2{from{-webkit-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);}}
+.pageLoading .text {position:absolute; width:100%; top:45%; margin-top:10px; text-align:center; color:#fff; font-size:1.2em;}
+
+
+/*==================================================
+           全站通用弹出层打开按钮 height:34px;
+==================================================*/
+.theMenu-open {height:0; text-align:center; overflow:hidden;}
+.theMenu-open label {display:inline-block; position:relative; border:1px #ccc solid; border-radius:5px; height:30px; line-height:30px; padding:0 10px; padding-right:30px; overflow:hidden;}
+.theMenu-open label span {font-size:1.25em;}
+.theMenu-open label i {position:absolute; right:8px; font-style:normal; font-size:2.2em; line-height:24px;}
+/*======= 全站通用弹出层关闭按钮 height:50px; =======*/
+.layout-close {height:0; overflow:hidden;}
+.layout-close label {float:right; width:36px; height:36px; margin-top:7px; margin-right:7px; line-height:32px; text-align:center; background:#4eb6ff; color:#fff; border-radius:50%; font-size:2.5em;}
+
+
+/*==================================================
+                     图标
+==================================================*/
+.yun-icon {background:url(http://www.maoyanmedia.com/static/image/icon.png) no-repeat;}
+.yun-icon.icon-qq {width:24px; height:24px; background-position:0 0;}
+.yun-icon.icon-qq:hover {background-position:-72px 0;}
+.yun-icon.icon-weixin {width:24px; height:24px; background-position:-35px 0;}
+.yun-icon.icon-weixin:hover {background-position:-104px 0;}
+.yun-icon.icon-weixins {width:159px; height:159px; background-position:-155px -54px;}
+.yun-icon.icon-app {width:93px; height:142px; background-position:-324px -61px;}
+/*==================== 登录相关图标 ====================*/
+.yun-Login-icon {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-login.png) no-repeat;}
+.yun-Login-icon.icon-user {width:18px; height:18px; background-position:0 -5px;}
+.yun-Login-icon.icon-pass {width:18px; height:18px; background-position:-43px -5px;}
+.yun-Login-icon.icon-yzm {width:18px; height:18px; background-position:-21px -5px;}
+
+
+/*==================================================
+                    网页TOP
+==================================================*/
+.top {height:36px; border-bottom:1px #eee solid; background:#f7f7f7;}
+/*========== 网页TOP-LEFT ==========*/
+.top .top-left {float:left; height:100%;}
+.top .top-left .welcome {float:left; height:100%; line-height:36px; font-size:1.2em;}
+.top .top-left > a {float:left; margin-left:5px; margin-top:6px; position:relative;}
+/*----- 广告主营销平台 -----*/
+.top .top-left .adv {float:left; height:16px; line-height:16px; margin-top:10px; overflow:hidden; font-size:1.05em;}
+.top .top-left .adv .plate {padding-right:10px; border-right:1px #a8a8a8 solid; margin-right:10px;}
+.top .top-left .adv .username {margin-right:10px;}
+/*----- 微信 -----*/
+.top .top-left a.icon-weixin span {position:absolute; top:31px; left:50%; margin-left:-9999px; background:#fff; cursor:default; z-index:10;}
+.top .top-left a.icon-weixin span b {display:block;}
+.top .top-left a.icon-weixin span i {display:block; height:30px; line-height:30px; text-align:center; font-size:1.1em; color:#333; font-style:normal;}
+.top .top-left a.icon-weixin:hover span {margin-left:-80px;}
+/*========== 网页TOP-RIGHT ==========*/
+.top .top-right {float:right;}
+.top .top-right > ul li {float:left; height:36px; line-height:36px; margin-left:30px;}
+.top .top-right > ul li a {font-size:1.2em; position:relative;}
+/*----- APP -----*/
+.top .top-right > ul li a span.icon-app {position:absolute; left:0; top:30px; left:50%; margin-left:-9999px; z-index:9;}
+.top .top-right > ul li a:hover span.icon-app {margin-left:-46px;}
+.top .top-right .adv {line-height:36px;}
+.top .top-right .adv .tr {float:left; line-height:36px; padding:0 12px; font-size:1.1em; cursor:pointer;}
+.top .top-right .adv .tr:hover {color:#4eb6ff;}
+
+/*显示下来菜单*/
+.top .top-right .adv .tr.dropMenu {position:relative; border-left:1px #f7f7f7 solid; border-right:1px #f7f7f7 solid;}
+.top .top-right .adv .tr.dropMenu i.jt-down {display:inline-block; width:10px; height:10px; background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-jt-down.gif) center no-repeat;}
+.top .top-right .adv .tr.dropMenu i.whiteLine {position:absolute; width:100%; height:1px; background:#fff; left:0; top:100%; z-index:2; visibility:hidden;}
+/*余额*/
+.top .top-right .adv .tr.dropMenu .drops {position:absolute; left:0; margin-left:-1px; top:100%; white-space:nowrap; padding:5px 12px; border:1px #eee solid; background:#fff; cursor:default; z-index:1; visibility:hidden;}
+.top .top-right .adv .tr.dropMenu .drops span,
+.top .top-right .adv .tr.dropMenu .drops a {display:block; height:24px; line-height:24px;}
+.top .top-right .adv .tr.dropMenu .drops span.s2 {color:#333;}
+.top .top-right .adv .tr.dropMenu .drops span.s3 {color:#aaa;}
+
+.top .top-right .adv .tr.dropMenu:hover {background:#fff; border-left:1px #eee solid; border-right:1px #eee solid;}
+.top .top-right .adv .tr.dropMenu:hover i.whiteLine,
+.top .top-right .adv .tr.dropMenu:hover .drops {visibility:visible;}
+
+/*==================
+    顶部站内信
+==================*/
+.top .NOTICE {float:left; position:relative; z-index:9; height:36px; margin-left:10px;}
+/*----- head -----*/
+.top .NOTICE > .listHead {display:table; height:100%; font-size:1.05em; padding:0 10px; cursor:pointer;}
+.top .NOTICE > .listHead > * {float:left; height:100%; display:table;}
+.top .NOTICE > .listHead > * > * {display:table-cell; vertical-align:middle;}
+.top .NOTICE > .listHead {position:relative; border:1px #f7f7f7 solid; border-top:0; border-bottom:0;}
+.top .NOTICE > .listHead:before {position:absolute; width:100%; height:1px; content:""; background:#fff; left:0; top:100%; opacity:0;}
+/*----- head > name -----*/
+.top .NOTICE > .listHead .name {position:relative; padding-left:21px; padding-right:2px;}
+.top .NOTICE > .listHead .name:before {position:absolute; left:0; top:50%; content:""; -webkit-transform:translateY(-50%); transform:translateY(-50%);}
+.top .NOTICE > .listHead .name:before {width:18px; height:18px; background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon/letter.png) center no-repeat; background-size:100% auto;}
+/*----- head > count -----*/
+.top .NOTICE > .listHead .count {height:16px; line-height:16px; font-size:11px; background:#f33; color:#fff; border-radius:8px;}
+.top .NOTICE > .listHead .count {padding:0 4px;}
+/*----- box -----*/
+.top .NOTICE > .box {position:absolute; font-size:1.05em; top:100%; background:#fff; margin-top:1px; left:0;}
+.top .NOTICE > .box {border:1px #ddd solid; border-top:0; box-shadow:3px 3px 2px #bbb;}
+.top .NOTICE > .box {z-index:1;}
+.top .NOTICE > .box {visibility:hidden;}
+/*----- box > noList -----*/
+.top .NOTICE > .box > .noList > .nothing {width:200px; height:80px; line-height:80px; text-align:center; color:#999;}
+/*----- box > listBody -----*/
+.top .NOTICE > .box > .listBody > ul {padding:5px 20px;}
+.top .NOTICE > .box > .listBody > ul {max-height:92px; overflow:hidden;}
+.top .NOTICE > .box > .listBody > ul > li {height:30px; line-height:30px;}
+.top .NOTICE > .box > .listBody > ul > li {border-top:1px #ddd dashed;}
+.top .NOTICE > .box > .listBody > ul > li:first-child {border-top:0;}
+.top .NOTICE > .box > .listBody > ul > li > a {display:block; width:160px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.top .NOTICE > .box > .listBody > ul > li > a {font-weight:bold;}
+.top .NOTICE > .box .btns {height:36px; position:relative; line-height:36px; background:#f7f7f7; border-top:1px #ddd solid; cursor:default;}
+.top .NOTICE > .box .btns > .close {position:absolute; right:5px; top:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%);}
+.top .NOTICE > .box .btns > .close {height:20px; line-height:20px; text-align:center; white-space:nowrap; cursor:pointer;}
+.top .NOTICE > .box .btns > .close:before {content:"忽略"; font-size:14px;}
+.top .NOTICE > .box .btns > a {display:table; margin:0 auto;}
+
+/* 鼠标经过效果 */
+/*.top .NOTICE:hover > .listHead {border:1px #ddd solid; border-top:0; border-bottom:0; background:#fff;}
+.top .NOTICE:hover > .listHead:before {opacity:1;}
+.top .NOTICE:hover > .box {visibility:visible;}*/
+/* 初始鼠标经过效果 */
+.top .NOTICE.hover > .listHead {border:1px #ddd solid; border-top:0; border-bottom:0; background:#fff;}
+.top .NOTICE.hover > .listHead:before {opacity:1;}
+.top .NOTICE.hover > .box {visibility:visible;}
+
+
+
+/*==================================================
+                   网页HEADER
+==================================================*/
+.header {height:73px; padding-top:27px; background:#fff; position:relative;}
+.header.m {height:65px; padding-top:15px;}
+/*---------- 响应式菜单开关 ----------*/
+.header .menuSwitch {float:left; width:44px; height:44px; background:#4eb6ff; overflow:hidden; position:relative; display:none;}
+.header .menuSwitch b {position:absolute; width:100%; left:0; top:25px; text-align:center; line-height:0; color:#fff; font-size:1.8em;}
+.header .menuSwitch b:before {content:"☰";}
+
+/*---------- LOGO ----------*/
+.header .logo {float:left; height:50px;}
+.header .logo img {height:100%;}
+.header .logo.adv {position:relative;}
+.header .logo.adv:before {position:absolute; width:150px; height:26px; line-height:26px; font-size:1.6em; left:100%; margin-left:10px; top:50%; margin-top:-13px; cursor:default;}
+.header .logo.adv:hover {color:#666;}
+.header .logo.media img {float:left;}
+.header .logo.media:after {float:left; padding-top:18px; margin-left:10px; font-size:1.6em; white-space:nowrap; color:#333;}
+.header .logo.media:after {content:"媒介主接单平台";}
+/*---------- LOGIN ----------*/
+.header .loginBtn {float:right; height:30px; line-height:30px; font-size:1.2em; margin-top:7px; display:none;}
+.header .loginBtn a {margin:0 10px;}
+
+/*---------- 导航菜单 ----------*/
+.header .menu ul {float:right;}
+.header .menu ul li {float:left; margin-left:25px;}
+.header .menu ul li a {float:left; height:40px; line-height:40px; padding:0 10px; text-align:center; font-size:1.65em; border-bottom:4px #fff solid;}
+.header .menu ul li a.active,
+.header .menu ul li a:hover {border-bottom:4px #319dd8 solid;}
+/*---------- 导航菜单-未登录 ----------*/
+.header .menu-index ul {float:right;}
+.header .menu-index ul li {float:left; margin-left:25px;}
+.header .menu-index ul li a {float:left; height:40px; line-height:40px; padding:0 10px; text-align:center; font-size:1.65em; border-bottom:4px #fff solid;}
+.header .menu-index ul li a.active,
+.header .menu-index ul li a:hover {border-bottom:4px #319dd8 solid;}
+/*---------- 导航菜单-ADV ----------*/
+.header .menu-adv ul {float:right; padding-top:8px; margin-right:36px;}
+.header .menu-adv ul li {float:left; margin-left:15px; position:relative;}
+.header .menu-adv ul li a,
+.header .menu-adv ul li span {float:left; height:32px; line-height:32px; background:#fff; border-radius:16px; color:#666; padding:0 15px; text-align:center; font-size:1.3em;}
+.header .menu-adv ul li a.active, .header .menu-adv ul li span.active,
+.header .menu-adv ul li a:hover, .header .menu-adv ul li span:hover {background:#4eb6ff; color:#fff; cursor:pointer;}
+.header .menu-adv ul li.recharge a {font-size:1em; padding:0; font-size:1.15em; background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-credit-card.png) left center no-repeat; color:#666; padding-left:24px;}
+.header .menu-adv ul li.recharge a.active,
+.header .menu-adv ul li.recharge a:hover {color:#4eb6ff;}
+/*抖音视频ico*/
+.header .menu-adv ul li > i.ico {position:absolute; z-index:1; top:-12px; right:-6px; font-style:normal;}
+.header .menu-adv ul li > i.ico.dy {width:24px; height:24px; background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-douyin-fire.png) center no-repeat;}
+.header .menu-adv ul li > i.ico.new {width:32px; height:16px; line-height:15px; text-align:center; background:red; color:#fff; border-radius:3px;}
+.header .menu-adv ul li > i.ico.new:before {content:"new"; position:relative; z-index:2;}
+.header .menu-adv ul li > i.ico.new:after {position:absolute; z-index:1; content:""; width:8px; height:8px; background:red; transform:rotate(45deg); left:30%; margin-left:-4px; bottom:-3px;}
+/*---------- 导航菜单-MEDIA ----------*/
+.header .menu-media {float:left;}
+.header .menu-media ul li {float:left; margin-left:50px; padding-top:12px;}
+.header .menu-media ul li a {display:block; width:40px; height:30px; line-height:30px; text-align:center; font-size:1.35em; border-bottom:3px #fff solid;}
+.header .menu-media ul li a:hover,
+.header .menu-media ul li a.active {color:#4eb6ff; border-bottom:3px #4eb6ff solid;}
+
+
+
+/*==================================================
+                   NOTICE公告
+==================================================*/
+.noticeArea {clear:both;}
+.noticeArea .noticeBox {border:1px #fae3a9 solid; border-left:none; border-right:0; background:#faf9f3;}
+.noticeArea .noticeBox .noticeContaion {height:34px; overflow:hidden;}
+.noticeArea .noticeBox .noticeContaion i {float:left; width:34px; height:100%; background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-notice.png) center no-repeat;}
+.noticeArea .noticeBox .noticeContaion .noticeClose {float:right; width:34px; height:100%; line-height:34px; text-align:center; font-size:2.6em; cursor:pointer;}
+.noticeArea .noticeBox .noticeContaion .noticeNr {float:left; height:100%;}
+.noticeArea .noticeBox .noticeContaion .noticeNr .noticeTxt,
+.noticeArea .noticeBox .noticeContaion .noticeNr .noticeLink {float:left; height:100%; line-height:34px; font-size:1.2em;}
+.noticeArea .noticeBox .noticeContaion .noticeNr .noticeLink {color:#4eb6ff;}
+.noticeArea .noticeBox .noticeContaion .noticeNr .noticeTxt {max-width:1000px; white-space:nowrap; text-overflow:clip; overflow:hidden;}
+.popNoticeArea .blackCover {position:fixed; display:table; width:100%; height:100%; left:0; top:0; background:rgba(0,0,0,.4); z-index:21;}
+.popNoticeArea .blackCover .cell {display:table-cell; vertical-align:middle;}
+.popNoticeArea .blackCover .cell .contain {width:650px; margin:0 auto; position:relative;}
+.popNoticeArea .blackCover .cell .contain .leaf {position:absolute; height:346px; z-index:22; width:518px;}
+.popNoticeArea .blackCover .cell .contain .leaf.red {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/CNY/leaf-red.png) no-repeat; left:-110px; top:-40px;}
+.popNoticeArea .blackCover .cell .contain .leaf.yellow {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/CNY/leaf-yellow.png) no-repeat; right:-80px; bottom:-50px;}
+.popNoticeArea .blackCover .cell .contain .whiteArea {background:#fff; border-radius:8px; padding:20px 40px; position:relative; z-index:23;}
+/*.popNoticeArea .blackCover .cell .contain .whiteArea .title {position:absolute; width:310px; height:100px; left:50%; margin-left:-155px; top:-40px; background:url(http://www.maoyanmedia.com/static/images/CNY/title.png) center no-repeat;}*/
+.popNoticeArea .blackCover .cell .contain .whiteArea .title {height:40px; line-height:40px; text-align:center; font-size:1.6em; font-weight:bold;}
+.popNoticeArea .blackCover .cell .contain .whiteArea .nr {width:100%; height:460px; background:url(https://www.ycqtg.com/static/index/weib/front/public/images/CNY/nr.gif) center bottom no-repeat;}
+.popNoticeArea .blackCover .cell .contain .whiteArea .con span {display:block; line-height:24px; font-size:1.2em}
+.popNoticeArea .blackCover .cell .contain .whiteArea .con span.p {padding-left:20px;}
+.popNoticeArea .blackCover .cell .contain .whiteArea .con span.r {text-align:right;}
+.popNoticeArea .blackCover .cell .contain .whiteArea .popNoticeClose {position:absolute; width:40px; height:40px; line-height:40px; text-align:center; font-size:3em; right:20px; top:20px; cursor:pointer;}
+
+/*==================================================
+                   网页FOOTER
+==================================================*/
+.web.footer {background:#33302b; padding:20px 0;}
+/*---------- 底部菜单 ----------*/
+.web.footer .menu {height:120px; color:#666; border-bottom:1px #666 solid;}
+.web.footer .menu dl {float:left; width:23%; margin:0 1%;}
+.web.footer .menu dl dt {height:35px;}
+.web.footer .menu dl dt i {float:left; width:20px; height:20px; margin-top:7px;}
+.web.footer .menu dl.service dt i {background:url(http://www.maoyanmedia.com/static/image/icon-footer-ico1.png) no-repeat;}
+.web.footer .menu dl.newer dt i {background:url(http://www.maoyanmedia.com/static/image/icon-footer-ico2.png) no-repeat;}
+.web.footer .menu dl.pays dt i {background:url(http://www.maoyanmedia.com/static/image/icon-footer-ico3.png) no-repeat;}
+.web.footer .menu dl.tese dt i {background:url(http://www.maoyanmedia.com/static/image/icon-footer-ico4.png) no-repeat;}
+.web.footer .menu dl dt span {float:left; margin-left:7px; height:35px; line-height:35px; font-size:1.4em;}
+.web.footer .menu dl dd {float:left; width:50%; height:26px;}
+.web.footer .menu dl dd i {float:left; width:20px; height:26px; background:url(http://www.maoyanmedia.com/static/image/icon-footer-ico5.png) center center no-repeat;}
+.web.footer .menu dl dd a {float:left; height:26px; line-height:26px; margin-left:5px;}
+/*---------- 底部NAV ----------*/
+.web.footer .nav {height:40px; line-height:40px; margin-top:10px; font-size:1.1em; text-align:center;}
+.web.footer .nav.adv {padding-top:0; color:#ccc;}
+.web.footer .nav.adv a {color:#ccc; margin:0 10px;}
+/*---------- 底部版权 ----------*/
+.web.footer .copyright {height:20px; line-height:20px; font-size:1.1em; text-align:center;}
+.web.footer .copyright.adv {color:#ccc;}
+/*---------- 底部图标 ----------*/
+.web.footer .icons {margin-top:10px; height:40px;}
+.web.footer .icons table {margin:0 auto;}
+.web.footer .icons table img {float:left; margin:0 5px;}
+
+
+/*----- 所有资源头像样式 -----*/
+.res.avatar {position:relative;}
+.res.avatar.article {width:100px; height:50px;}
+.res.avatar.article > img {width:100%; height:100%;}
+.res.avatar.round,
+.res.avatar.openId {width:80px; height:80px; overflow:hidden;}
+.res.avatar.round > .circle,
+.res.avatar.openId > .circle {display:block; position:relative; width:100%; height:100%; border-radius:50%; overflow:hidden;}
+.res.avatar.round > .circle > img {width:100%; height:100%;}
+.res.avatar.openId > .circle > img {position:absolute; width:500%; height:500%; top:-200%; left:-200%; z-index:1;}
+/*角标*/
+.res.avatar.subscript:before {position:absolute; content:""; width:25%; padding-bottom:25%; right:0; bottom:0; z-index:2;}
+/*--- 微信认证 ---*/
+.res.avatar.openId.subscript.auth:before {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-verified-wechat.png) center no-repeat; background-size:100% auto;}
+/*friendCountStatus*/
+.res.avatar.round.subscript.friend.status:before {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-verified-friend.png) center no-repeat; background-size:100% auto;}
+/*weiboWeakRecomm*/
+.res.avatar.round.subscript.weibo.auth.yellow:before {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-verified-weibo-yellow.png) center no-repeat; background-size:100% auto;}
+.res.avatar.round.subscript.weibo.auth.blue:before {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-verified-weibo-blue.png) center no-repeat; background-size:100% auto;}
+.res.avatar.round.subscript.weibo.auth.star:before {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-verified-weibo-star.png) center no-repeat; background-size:100% auto;}
+/*--- 预约|直播|短视频 - 角标 ---*/
+.res.avatar.round.ico:before {position:absolute; right:0; bottom:0; z-index:1; content:"";}
+.res.avatar.round.ico:before {width:1.1em; height:1.1em;}
+.res.avatar.round.ico.star:before {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-star.png) left top no-repeat; background-size:auto 100%;}
+.res.avatar.round.ico.star.wechat:before {background-position:0 0;}
+.res.avatar.round.ico.star.friend:before {background-position:50% 0;}
+.res.avatar.round.ico.star.weibo:before {background-position:100% 0;}
+.res.avatar.round.ico.live.doyu:before {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-live-doyu.png) center no-repeat; background-size:100% auto;}
+.res.avatar.round.ico.live.huajiao:before {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-live-huajiao.png) center no-repeat; background-size:100% auto;}
+.res.avatar.round.ico.live.huya:before {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-live-huya.png) center no-repeat; background-size:100% auto;}
+.res.avatar.round.ico.live.inke:before {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-live-inke.png) center no-repeat; background-size:100% auto;}
+.res.avatar.round.ico.live.meipai:before {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-live-meipai.png) center no-repeat; background-size:100% auto;}
+.res.avatar.round.ico.live.xiongmao:before {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-live-xiongmao.png) center no-repeat; background-size:100% auto;}
+.res.avatar.round.ico.live.yizhibo:before {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-live-yizhibo.png) center no-repeat; background-size:100% auto;}
+.res.avatar.round.ico.live.taobao:before {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-live-taobao.png) center no-repeat; background-size:100% auto;}
+.res.avatar.round.ico.video.douyin:before {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-video-douyin.png) center no-repeat; background-size:100% auto;}
+
+
+
+.the-form .the-title {height:45px; text-align:center; font-size:1.7em; color:#4eb6ff;}
+.the-form ul {margin-bottom:10px; display:block; width:100%;}
+.the-form ul li:nth-of-type(1) {float:left; width:100px; padding-top:5px;}
+.the-form ul li:nth-of-type(1).textarea {padding-top:0;}
+.the-form ul li:nth-of-type(1) span {float:right; position:relative; font-size:1.25em; color:#333;}
+.the-form ul li:nth-of-type(1) span i {position:absolute; top:0; right:100%; margin-right:5px; margin-top:3px; width:5px; height:5px; background:#f66; border-radius:50%;}
+.the-form ul li:nth-of-type(2) {margin-left:100px; display:block;}
+.the-form ul li:nth-of-type(2) div.no-ico {margin-right:15px; position:relative;}
+/*--- 定义input之类宽度100% ---*/
+.the-form ul li:nth-of-type(2) div.no-ico input[type="text"],
+.the-form ul li:nth-of-type(2) div.no-ico input[type="password"],
+.the-form ul li:nth-of-type(2) div.no-ico textarea,
+.the-form ul li:nth-of-type(2) div.no-ico select {border:1px #aaa solid; border-radius:6px; text-indent:0; padding:0 5px; width:100%; font-size:1.1em;}
+.the-form ul li:nth-of-type(2) div.no-ico select {width:auto;}
+/*--- 定义input之类错误显示红边框 ---*/
+.the-form ul li:nth-of-type(2) div.no-ico input[type="text"].error,
+.the-form ul li:nth-of-type(2) div.no-ico input[type="password"].error,
+.the-form ul li:nth-of-type(2) div.no-ico textarea.error,
+.the-form ul li:nth-of-type(2) div.no-ico select.error {border:1px #f00 solid;}
+/*--- 定义input之类当聚焦的时候边框颜色 ---*/
+.the-form ul li:nth-of-type(2) div.no-ico input[type="text"]:focus,
+.the-form ul li:nth-of-type(2) div.no-ico input[type="password"]:focus,
+.the-form ul li:nth-of-type(2) div.no-ico textarea:focus,
+.the-form ul li:nth-of-type(2) div.no-ico select:focus,
+.the-form ul li:nth-of-type(2) div.no-ico input[type="text"].error:focus,
+.the-form ul li:nth-of-type(2) div.no-ico input[type="password"].error:focus,
+.the-form ul li:nth-of-type(2) div.no-ico textarea.error:focus,
+.the-form ul li:nth-of-type(2) div.no-ico select.error:focus {border:1px #4eb6ff solid;}
+/*--- 定义input之类的高度 ---*/
+.the-form ul li:nth-of-type(2) div.no-ico input[type="text"],
+.the-form ul li:nth-of-type(2) div.no-ico input[type="password"],
+.the-form ul li:nth-of-type(2) div.no-ico select {height:30px;}
+.the-form ul li:nth-of-type(2) div.no-ico .text {height:28px; line-height:28px; padding-top:1px; font-size:1.25em;}
+/*--- 定义textarea向内填充5PX ---*/
+.the-form ul li:nth-of-type(2) div.no-ico textarea {padding:5px;}
+/*--- 错误提示之类 ---*/
+.the-form ul li:nth-of-type(2) div.no-ico > i {position:absolute; white-space:nowrap; left:100%; margin-left:10px; top:50%; margin-top:-8px; height:16px; font-style:normal; line-height:16px; color:#888; font-size:1.1em;}
+.the-form ul li:nth-of-type(2) div.no-ico > i.error {color:#f26d80;}
+.the-form ul li:nth-of-type(2) div.no-ico > i:before {float:left; margin-right:5px; width:16px; height:16px; line-height:16px; border-radius:50%; text-align:center; color:#fff;}
+.the-form ul li:nth-of-type(2) div.no-ico > i.ok:before {background:#3ac66f; content:"✔";}
+.the-form ul li:nth-of-type(2) div.no-ico > i.error:before {background:#f26d80; content:"×"; font-size:1.2em;}
+.the-form ul.textarea li:nth-of-type(2) div.no-ico {padding-bottom:20px;}
+.the-form ul.textarea li:nth-of-type(2) div.no-ico > i {left:0; margin-left:5px; top:100%; margin-top:-18px;}
+/*--- 当聚焦时候 错误提示隐藏 ---*/
+.the-form ul li:nth-of-type(2) div.no-ico input[type="text"]:focus + i.error,
+.the-form ul li:nth-of-type(2) div.no-ico input[type="password"]:focus + i.error,
+.the-form ul li:nth-of-type(2) div.no-ico textarea:focus + i.error,
+.the-form ul li:nth-of-type(2) div.no-ico select:focus + i.error {display:none;}
+/*--- 定义按钮之类 ---*/
+.the-form .the-btn {text-align:center;}
+.the-form .the-btn .btn {display:inline-block; height:28px; line-height:28px; font-size:1.25em; padding:0 20px; border-radius:6px; cursor:pointer;}
+.the-form .the-btn .btn.blue {background:#4eb6ff; border:1px #4eb6ff solid; color:#fff;}
+.the-form .the-btn .btn.reg {background:#f66; border:1px #f66 solid; color:#fff;}
+.the-form .the-btn .btn.white {background:#fff; border:1px #4eb6ff solid; color:#4eb6ff;}
+
+
+/*------------------------- 完善个人信息 --------------------------*/
+.popLayer .box.personInfos.form {width:750px;}
+.popLayer .box.personInfos.form .the-form ul {margin-bottom:15px;}
+.popLayer .box.personInfos.form .the-form ul.hide {margin-bottom:0; height:0; overflow:hidden;}
+/*----- 表单标题 ----- */
+.popLayer .box.personInfos.form .form-title {height:70px; padding-left:30px; position:relative; line-height:60px; font-size:1.5em; text-align:center;}
+.popLayer .box.personInfos.form .form-title i {position:absolute; width:60px; height:60px; background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-reg-success.png); top:0; left:50%; margin-left:-160px;}
+/*----- 黄色部分提示 ----- */
+.popLayer .box.personInfos.form .tishi {width:80%; margin:0 auto; height:24px; padding:5px 0; background:#ffffe5; border:1px #f7b652 solid; text-align:center; margin-bottom:25px;}
+.popLayer .box.personInfos.form .tishi div {display:table; margin:0 auto;}
+.popLayer .box.personInfos.form .tishi div span, .popLayer .box.personInfos.form .tishi div a {float:left; height:24px; line-height:24px; margin:0 3px;}
+.popLayer .box.personInfos.form .tishi div span {color:#333; font-size:1.15em;}
+.popLayer .box.personInfos.form .tishi div a.qq {font-size:1.25em; color:#4eb6ff;}
+/*--- 定义input之类宽度100% ---*/
+.popLayer .box.personInfos.form .the-form ul li:nth-of-type(2) div.no-ico input[type="text"],
+.popLayer .box.personInfos.form .the-form ul li:nth-of-type(2) div.no-ico input[type="password"],
+.popLayer .box.personInfos.form .the-form ul li:nth-of-type(2) div.no-ico textarea {width:96%;}
+/*----- 不同的项目不同长度 ----- */
+.popLayer .box.personInfos.form .the-form ul.contact li:nth-of-type(2) div.no-ico {width:230px;}  /*联系人*/
+.popLayer .box.personInfos.form .the-form ul.qq li:nth-of-type(2) div.no-ico,  /*QQ*/
+.popLayer .box.personInfos.form .the-form ul.mobile li:nth-of-type(2) div.no-ico {width:180px;}  /*手机号*/
+.popLayer .box.personInfos.form .the-form ul.email li:nth-of-type(2) div.no-ico {width:250px;}  /*电子邮箱*/
+.popLayer .box.personInfos.form .the-form ul.companyNm li:nth-of-type(2) div.no-ico {width:300px;}  /*公司名*/
+.popLayer .box.personInfos.form .the-form ul.industry li:nth-of-type(2) div.no-ico {width:260px;}
+.popLayer .box.personInfos.form .the-form ul.spread li:nth-of-type(2) div.no-ico {width:280px;}
+/*----- 不提示语 ----- */
+.popLayer .box.personInfos.form .tips {height:30px; line-height:30px; font-size:1.1em;}
+.popLayer .box.personInfos.form .tips.error {color:#f00;}
+/*----- 按钮 ----- */
+.popLayer .box.personInfos .the-form .the-btn .btn {width:140px; height:38px; line-height:38px; font-size:1.25em; padding:0 20px; border-radius:6px; cursor:pointer;}
+
+dl.checkboxs {width:100%;}
+dl.checkboxs dd {float:left; width:16.6%; padding:2px 0;}
+dl.checkboxs dd label {display:inline-block; height:22px; cursor:pointer;}
+dl.checkboxs dd label > i, dl.checkboxs dd label > span {float:left;}
+dl.checkboxs dd label > i {width:16px; height:16px; border:1px #bbb solid; border-radius:4px; margin-top:2px; margin-right:5px; position:relative; overflow:hidden;
+-webkit-box-shadow:0 0 5px #ddd inset;
+-ms-box-shadow:0 0 5px #ddd inset;
+-o-box-shadow:0 0 5px #ddd inset;
+box-shadow:0 0 5px #ddd inset;}
+dl.checkboxs dd label > i b {position:absolute; left:0; top:0; line-height:16px; margin-left:1px; color:#666; visibility:hidden;}
+dl.checkboxs dd label > i b:before {content:'✔';}
+dl.checkboxs dd label > span {height:22px; line-height:22px; font-size:1.1em; color:#666;}
+dl.checkboxs dd label input[type="checkbox"]:checked + i {border:1px #666 solid;}
+dl.checkboxs dd label input[type="checkbox"]:checked + i b {visibility:visible;}
+dl.checkboxs dd label input[type="checkbox"]:checked ~ span {color:#333;}
+
+
+/*----- 二维码(添加资源成功、支付成功) -----*/
+.successQrcode {width:100%; position:relative;}
+.successQrcode .qrcode {position:absolute; width:180px; top:0; right:80px;}
+.successQrcode .qrcode .codeImg {width:180px; height:180px; background:url(https://www.ycqtg.com/static/index/weib/front/public/images/ewm.jpg) no-repeat; background-size:100% auto;}
+.successQrcode .qrcode .txt {text-align:center; line-height:24px; font-size:1.2em;}
+
+
+/*----- 订单橙色警告 -----*/
+.warning .warn {background:#fec635; font-size:1em;}
+.warning .red {color:#f00;}
+.warning .black {color:#333;}
+/*订单列表*/
+.media table tbody tr.warning td {padding-bottom:46px;}
+.media table tbody tr.warning td:nth-of-type(1) {position:relative;}
+/*.media table tbody tr.warning .warn {position:absolute; width:1130px; height:40px; line-height:40px; left:0; bottom:3px;}*/
+.media table tbody tr.warning .warn {position:absolute; width:1115px; padding-left:15px; height:32px; line-height:32px; left:0; bottom:3px; text-align:left;}
+/*订单详情*/
+.warning.view {width:100%;}
+.warning.view .warn {height:32px; line-height:32px; text-align:center;}
+.warning.view .warn .w {width:1180px; margin:0 auto; text-align:left;}
+.warning.view .warn span.red {color:#f00;}
+.warning.view .warn span.black {color:#333;}
+/*订单列表 入口截图弹框*/
+.warning.pop .warn {padding:5px 10px; line-height:22px; color:#333;}
+
+
+/*---- 公用刷新按钮 -----*/
+.refresh {position:absolute; width:24px; height:24px; cursor:pointer;}
+.refresh > * {position:absolute; width:100%; height:100%; background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-refresh.png) center no-repeat; background-size:100% 100%;}
+.refresh > *.re {
+animation:refresh .9s ease infinite;
+-moz-animation:refresh .9s ease infinite;
+-webkit-animation:refresh .9s ease infinite;
+-o-animation:refresh .9s ease infinite;}
+@keyframes refresh{from{-webkit-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);transform:rotate(360deg);}}
+@-webkit-keyframes refresh{from{-webkit-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);transform:rotate(360deg);}}
+
+
+
+/*---- 公用优惠券样式 -----*/
+/*
+<label class="coupon hasBtn">
+    <input type="radio" class="none" name="article" checked>
+    <i class="check"></i>
+    <div class="bg disabled clearfix">
+        <div class="price">￥218</div>
+        <div class="info">
+            <div class="cell">
+                <div class="condition">满58886元可用</div>
+                <div class="dates">
+                    <span>有效期至2018.3.21</span>
+                    <span>仅限新闻软文资源可用</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btn">立即使用</div>
+</label>
+*/
+.coupon {position:relative; display:block; width:100%;}
+.coupon .check {position:absolute; visibility:hidden; width:24px; height:24px; right:0; margin-right:-8px; top:0; margin-top:-8px; z-index:2;}
+.coupon .check {background:url(https://www.ycqtg.com/static/index/weib/front/public/images/icon-coupon-checked.png) center no-repeat; background-size:100% auto;}
+.coupon .back {height:100px; border-radius:8px; position:relative; z-index:1;-webkit-transition: all .3s;transition: all .3s;}
+.coupon .back,
+.coupon input[type="radio"] ~ .back,
+.coupon input[type="checkbox"] ~ .back {background:#4eb6ff url(https://www.ycqtg.com/static/index/weib/front/public/images/bg-coupon.png) left top no-repeat; cursor:pointer;}
+.coupon .back.disabled,
+.coupon input[type="radio"][disabled] ~ .back,
+.coupon input[type="checkbox"][disabled] ~ .back {background:#ddd url(https://www.ycqtg.com/static/index/weib/front/public/images/bg-coupon-disabled.png) left top no-repeat; cursor:not-allowed;}
+.coupon .back .price {position:absolute; height:50px; line-height:50px; top:50%; margin-top:-25px; left:0; white-space:nowrap;}
+.coupon .back .price {color:#fff; font-size:2.7em; font-weight:bold;}
+.coupon .back .info {float:right; height:100%; margin-right:10px; max-width:140px; display:table;}
+.coupon .back .info .cell {display:table-cell; vertical-align:middle; text-align:center;}
+.coupon .back .info .condition {border-bottom:1px rgba(255,255,255,.4) solid; padding-bottom:5px; margin-bottom:5px; color:#fff; font-size:1.3em;}
+.coupon .back .info .dates {color:rgba(255,255,255,.6);}
+.coupon .back .info .dates > * {display:block; width:100%;}
+.coupon .btn {display:none; height:40px; line-height:40px; text-align:center; border:1px #4eb6ff solid; border-top:2px #4eb6ff dashed; cursor:pointer;}
+.coupon .btn {border-radius:8px;}
+.coupon .btn {border-top-left-radius:0; border-top-right-radius:0;}
+.coupon .back.disabled ~ a, .coupon .back.disabled ~ a:hover {color: #ddd; cursor: not-allowed;}
+.coupon .back.disabled ~ a .btn {border: 1px #ddd solid; border-top: 2px #ddd dashed;}
+.coupon.hasBtn .back {border-bottom-left-radius:0; border-bottom-right-radius:0;}
+.coupon.hasBtn .btn {display:block;}
+.coupon input[type="radio"]:checked ~ .check,
+.coupon input[type="checkbox"]:checked ~ .check {visibility:visible;}
+.coupon input[type="radio"]:checked ~ .back,
+.coupon input[type="radio"] ~ .back:hover,
+.coupon input[type="checkbox"]:checked ~ .back,
+.coupon input[type="checkbox"] ~ .back:hover {
+  -webkit-box-shadow:0 0 20px #4eb6ff;
+  -ms-box-shadow:0 0 20px #4eb6ff;
+  box-shadow:0 0 20px #4eb6ff;
+}
+.coupon input[type="radio"][disabled] ~ .back:hover,
+.coupon input[type="checkbox"][disabled] ~ .back:hover {
+  -webkit-box-shadow:none;
+  -ms-box-shadow:none;
+  box-shadow:none;
+}
+
+
+
+
+

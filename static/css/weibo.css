@@ -1,0 +1,64 @@
+body{font-family:'微软雅黑';margin:0px;padding:0px;}
+
+.vone{width:100%;height:auto;overflow:hidden;background-color:#f7f7f7;}
+.vone_main{width:1200px;height:auto;overflow:hidden;margin:0 auto;}
+
+.vone-center{box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+    height: 60px;
+    color: #e23c41;
+    background: url(http://www.maoyanmedia.com/static/image/van_tit.png) center bottom no-repeat;
+    margin-bottom: 60px;
+	margin-top: 30px;
+	font-family: inherit;
+    font-weight: 500;}
+
+.vone-fl{}
+.vone-fl dl {
+    width: 197px;
+    text-align: center;
+    margin: 55px 94px 70px;
+	float:left;
+}
+.vone-fl dl dd {
+    color: #8e8e8e;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 25px;
+	margin-left: 0px;
+}
+
+.vtwo{width:100%;height:auto;overflow:hidden;}
+.vtwo_main{width:1200px;height:auto;overflow:hidden;margin:0 auto;}
+.vtwo_span{width:100%;height:50px;border-top:2px solid #3daaeb;margin-bottom: 40px;}
+.vtwo_span span{display:block;width:50%;height:50px;text-align:center;line-height:50px;float:left;}
+.vtwo_span span a{display:block;cursor: pointer;}
+.vtwo_span span a:hover{color:rgb(61, 170, 235);}
+.vtwo_span span a.xcur{background-color: rgb(61, 170, 235);color:#fff;}
+
+.vtwo_ps{width:100%;height:auto;overflow:hidden;}
+.vtwo_ps span{display:block;}
+
+
+.tou-top-dz span{
+    margin: 0;
+    padding: 0;
+    width:50px;
+    height:20px;
+    margin:0 auto;
+    display:block;
+    padding-top: 9px;}
+.tou-top-dz em{
+    font-style: normal;
+    float:left;
+    height:14px;
+    line-height:14px;
+    padding-top:3px;
+    }
+.tou-top-dz i{
+    float:left;
+    font-style: normal;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 5px;}

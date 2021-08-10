@@ -1,0 +1,447 @@
+
+
+/*
+描述: Cavan全局样式表
+作者: linli & guwj
+*/
+
+/* =0 Reset 重置
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+body,div,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,pre, 
+form,fieldset,input,textarea,p,blockquote,th,td{ padding:0; margin:0;} 
+table{ /*border-collapse:collapse; border-spacing:0;*/}
+fieldset,img{ border:0;}
+body{
+  font-family:"微软雅黑";
+}
+body a{
+ text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+* {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+ul,li{ list-style:none;}
+
+/*头部 start*/
+/*第一块 start*/
+.tone_bj{
+  display: inline-block;
+    width: 100%;
+    background: url(http://www.maoyanmedia.com/static/image/pc-1-bg.png) center center no-repeat;
+  padding-top: 50px;
+}
+.tone{width: 1200px;    height: 185px;margin: 0 auto;}
+.tonek{
+  width:280px;
+  height:165px;
+  margin:10px;
+  float:left;
+  /*
+  background-position: 100% 100%;
+  */
+  border-radius: 5px;
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tonek:hover{
+    box-shadow: 0px 2px 9px 0px rgba(15, 16, 16, 0.1);
+}
+.t1{
+  background-image: url(http://www.maoyanmedia.com/static/image/1-kpbg1.png);
+  color: #a38558;
+}
+.t2{
+  background-image: url(http://www.maoyanmedia.com/static/image/1-kpbg2.png);
+  color: #a1625d;
+}
+.t3{
+  background-image: url(http://www.maoyanmedia.com/static/image/1-kpbg3.png);
+  color: #717897;
+}
+.t4{
+  background-image: url(http://www.maoyanmedia.com/static/image/1-kpbg4.png);
+  color: #8f7864;
+}
+.tonek_title {
+    padding-top:25px;
+	padding-left:29px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.tonek_content{
+   width: 155px;
+    padding-left: 29px;
+    font-size: 14px;
+    line-height: 22px;
+    max-height: 88px;
+    height: 88px;
+    overflow: hidden;
+}
+/*第一块 end*/
+/*第二块 start*/
+.side2 {height: 620px;background: #FAFBFE;}
+.sidebd {width: 1200px;height: 100%;margin: 0 auto;position: relative;}
+.side2 .detail {
+    font-size: 28px;
+    color: #000;
+    padding-top: 108px;
+    font-weight: 600;
+}
+.side2 .detail span {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #999;
+    font-weight: 400;
+}
+.blocktab{width: 1200px;height: 390px;background: #fff;margin-top: 20px;position: relative;}
+.blocktab .hd{height: 36px;position: absolute;top: -58px;right: 0;}
+.blocktab .hd ul{height: 36px;}
+.blocktab .hd li{height: 36px;line-height: 36px;padding: 0 20px;border-radius: 18px;-webkit-border-radius: 18px;font-size: 15px;color: #404040;float: left;cursor: pointer;}
+.blocktab .hd li.on{font-weight: 600;color: #E71F19;background: #fff;}
+.blocktab .bd ul:first-child{display: block;}
+.blocktab .bd ul{display: none;}
+.blocktab .bd li{height: 390px;box-shadow:0px 9px 30px 0px rgba(209,219,248,0.3);-webkit-box-shadow:0px 9px 30px 0px rgba(209,219,248,0.3);border-radius: 4px;-webkit-border-radius: 4px;}
+.blocktab .bd .img{float: left;width: 454px;height: 100%;}
+.blocktab .bd .text{float: left;width: 400px;height: 100%;padding-right: 60px;margin-left: -14px;}
+.blocktab .bd .field{float: left;width: 240px;padding-left: 60px;height: 100%;background: #F7FAFF;}
+.blocktab .bd .p1{font-size: 24px;color: #333;font-weight:500;padding-top: 54px;}
+.blocktab .bd .p1::after{width: 28px;height: 4px;background: url(http://www.maoyanmedia.com/static/image/icon9.png);content: "";display: block;margin-top: 20px;}
+.blocktab .bd .p2{font-size: 14px;color: #727272;margin-top: 20px;}
+.blocktab .bd .p3{font-size: 0;margin-top: 24px;}
+.blocktab .bd .p3 span{font-size: 14px;color: #404040;display: inline-block;height: 28px;line-height: 28px;padding: 0 20px;border-radius: 19px;-webkit-border-radius: 19px;background: #F4F6FB;margin: 0 10px 10px 0;}
+.blocktab .bd .m1{font-size: 20px;color: #333;font-weight:500;padding-top: 52px;padding-bottom: 20px;}
+.blocktab .bd .m1::after{width: 28px;height: 4px;background: url(http://www.maoyanmedia.com/static/image/icon9.png);content: "";display: block;margin-top: 19px;}
+.blocktab .bd .m{font-size: 16px;color: #49455B;height: 24px;line-height: 24px;margin-bottom: 20px;}
+.blocktab .bd .m img{width: 24px;height: 24px;display: inline-block;vertical-align: top;margin-right: 15px;box-shadow: 0 10px 14px rgba(93,115,255,0.25);-webkit-box-shadow: 0 10px 14px rgba(93,115,255,0.25);border-radius: 5px;-webkit-border-radius: 5px;}
+
+/*第二块 end*/
+
+/*第三块 start*/
+.side1{height: 755px;background: url(http://www.maoyanmedia.com/static/image/side2bg.jpg) no-repeat center top;}
+.side3{height: 755px;background: url(http://www.maoyanmedia.com/static/image/side3bg.png) no-repeat center top;}
+.side4{height: 755px;background: url(http://www.maoyanmedia.com/static/image/side4bg.png) no-repeat center top;}
+.side5{height: 755px;background: url(http://www.maoyanmedia.com/static/image/side5bg.png) no-repeat center top;}
+.sideprobox{width: 1200px;height: 595px;padding-top: 80px;}
+.sideprofl{float: left;position: relative;width: 240px;height: 565px;padding-left: 50px;padding-right: 118px;}
+.side1 .sideprofl{background: url(http://www.maoyanmedia.com/static/image/prosty0.png);}
+.side3 .sideprofl{background: url(http://www.maoyanmedia.com/static/image/prosty1.png);}
+.side4 .sideprofl{background: url(http://www.maoyanmedia.com/static/image/prosty2.png);}
+.side5 .sideprofl{background: url(http://www.maoyanmedia.com/static/image/prosty3.png);}
+.sideprofr{float: left;width: 792px;height: 595px;position: relative;}
+.sideprofr .hd{height: 50px;}
+.sideprofr .hd ul{height: 45px;}
+.sideprofr .hd li{height: 45px;width: 127px;margin-left: 5px;background: #fff;background: rgba(255,255,255,0.19);border-radius: 4px;-webkit-border-radius: 4px;float: left;}
+.sideprofr .hd li.on{background: #fff;}
+.sideprofr .hd li a{display: block;font-size: 15px;color: #fff;font-weight: 600;line-height: 45px;text-align: center;}
+.sideprofr .hd li.on a{color: #000;}
+.sideprofr .hd li a img{display: inline-block;vertical-align: top;margin-right: 10px;margin-top: 13px;}
+.jumpmore{height: 45px;width: 127px;background: #fff;background: rgba(255,255,255,0.19);border-radius: 4px;-webkit-border-radius: 4px;position: absolute;top: 0;right: 0;}
+.jumpmore a{display: block;font-size: 15px;font-weight: 600;color: #fff;line-height: 45px;text-align: center;}
+.jumpmore a i{width: 20px;height: 20px;display: inline-block;vertical-align: top;margin-right: 10px;margin-top: 12px;background: url(http://www.maoyanmedia.com/static/image/icon10.png);}
+.sideprofr .bd{height: 545px;width: 910px;background: #EAEBF5;margin-left: -118px;border-radius: 4px;-webkit-border-radius: 4px;}
+.sideprofr .bd ul{display: none;height: 545px;width: 910px;border-radius: 4px;-webkit-border-radius: 4px;overflow: hidden;}
+.sideprofr .bd ul:first-child{display: block;}
+.sideprofr .bd li{height: 545px;width: 915px;}
+.sideprofr .sign{width: 300px;height: 270px;background: #fff;float: left;margin: 0 5px 5px 0;position: relative;overflow: hidden;}
+.sideprofr .sign > a{width: 300px;height: 270px;display: block;position: relative;z-index: 2;pointer-events: none;}
+.sideprofr .sign i{display: none;}
+.sideprofr .sign:hover:after,.sideprofr .sign:hover i{content: "";display: block;width: 250px;height: 145px;background: rgba(192,218,251,0.2);position: absolute;left: 50%;margin-left: -125px;}
+.side4 .sideprofr .sign:hover:after,.side4 .sideprofr .sign:hover i{background: rgba(190,237,197,0.2);}
+.side5 .sideprofr .sign:hover:after,.side5 .sideprofr .sign:hover i{background: rgba(255,209,183,0.35);}
+.sideprofr .sign:hover i{border-radius: 0 0 250px 250px;top: 0;}
+.sideprofr .sign:hover::after{border-radius: 250px 250px 0 0;bottom: 0;}
+.sideprofr .sign .p1{height: 24px;padding: 20px 20px 0!important;}
+.sideprofr .sign .p1 img{width: 24px;height: 24px;}
+.sideprofr .sign .p1 span{height: 22px;line-height: 22px;padding: 0 8px;background: #E6E8F6;border-radius: 11px;-webkit-border-radius: 11px;font-size: 12px;color: #6E7392;float: right;margin-top: 1px;}
+.sideprofr .sign:hover .p2{background: #fff;}
+.sideprofr .sign .p2{width: 94px;height: 94px;padding: 6px!important;
+background: #F3F4FF;border-radius: 100%;-webkit-border-radius: 100%;
+overflow: hidden;position: absolute;top:29px;
+/*
+left:50%;margin-left:-47px;
+*/
+left:97px;
+}
+.sideprofr .sign .p2 img{width: 94px;height: 94px;border-radius: 100%;-webkit-border-radius: 100%;}
+.sideprofr .sign .p3{font-size: 18px;color: #333;text-align: center;margin: 0 auto;width: 260px;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;padding-top: 92px;}
+.sideprofr .sign .p4{height: 40px;padding-top: 19px;margin-top: 10px;position: relative;}
+.sideprofr .sign:hover .p4{display: none;}
+.sideprofr .sign .p4::after{content: "";display: block;width: 28px;height: 4px;background: url(http://www.maoyanmedia.com/static/image/icon9.png);position: absolute;top: 0;left: 50%;margin-left: -14px;}
+.sideprofr .sign .p4 > div{float: left;width: 50%;position: relative;}
+.sideprofr .sign .p4 >div:first-child::after{content: "";display: block;width: 1px;height: 16px;background: #F0F1F7;position: absolute;right: 0;top: 12px;}
+
+.sideprofr .sign .p4 >div.ttt::after{content: "";display: block;width: 1px;height: 16px;background: #F0F1F7;position: absolute;right: 0;top: 12px;}
+
+.sideprofr .sign .p4 > div .mid{display: table;margin: 0 auto;}
+.sideprofr .sign .p4 > div span{display: block;font-size: 12px;color: #A3A4AC;line-height: 18px;}
+.sideprofr .sign .p4 > div span img{width: 12px;height: 12px;display: inline-block;vertical-align: top;margin-top: 4px;margin-right: 5px;}
+.sideprofr .sign .p4 > div p{font-weight: 500;text-align: center;font-size: 16px;color: #484848;line-height: 22px}
+.sideprofr .sign .linksto{height: 38px;padding: 0 30px;position: relative;z-index: 8;transition: all .3s}
+.sideprofr .sign:hover .linksto{transform: translateY(-88px);-webkit-transform: translateY(-88px);transition: all 0.2s;-webkit-transition: all 0.2s;}
+.sideprofr .sign .linksto a{float: right;width: 110px;height: 37px;line-height: 38px;text-align: center;font-size: 14px;color: #898B99;border-radius: 20px;-webkit-border-radius: 20px;background: #fff;box-shadow:0px 10px 14px 0px rgba(93,115,255,0.25);-webkit-box-shadow:0px 10px 14px 0px rgba(93,115,255,0.25);}
+.sideprofr .sign .linksto a:first-child{float: left;color: #fff;background: rgba(98,132,255,1);background: linear-gradient(to left, rgba(98,132,255,1), rgba(94,67,255,1));background: -webkit-linear-gradient(right, rgba(98,132,255,1), rgba(94,67,255,1));}
+.sideprofl .d1{font-size: 48px;color: #fff;padding-top: 47px;}
+.sideprofl .d2{font-size: 14px;color: #fff;width: 192px;line-height: 20px;height: 40px;margin-top: 8px;}
+.sideprofl .d3{font-size: 14px;color: #B5BFFF;line-height: 22px;position: relative;padding-top: 12px;margin-top: 158px;}
+.sideprofl .d3::after{content: "";display: block;width: 21px;height: 3px;background: url(http://www.maoyanmedia.com/static/image/icon11.png);position: absolute;left: 0;top: 0;}
+.sideprofl .d4{font-size: 48px;color: #fff;font-weight: bold;text-shadow:0px 3px 6px rgba(68,52,224,0.6);}
+.sideprofl .d4 span{font-size: 20px;color: #B6B8F9;font-weight: normal;margin-left: 4px;position: relative;top: -3px;}
+.sideprofl .d4::after{content: "";display: block;width: 21px;height: 3px;background: url(http://www.maoyanmedia.com/static/image/icon11.png);margin-top: 7px;}
+.sideprofl .d5{font-size: 14px;color: #B5BFFF;margin-top: 7px;}
+.sideprofl .d6{font-size: 20px;color: #fff;line-height: 28px;margin-top: 5px;}
+.sideprofl .d6 span{display: inline-block;vertical-align: top;height: 28px;position: relative;margin-left: 15px;padding-left: 15px;}
+.sideprofl .d6 span::after{content: "";display: block;width: 1px;height: 13px;background: url(http://www.maoyanmedia.com/static/image/icon12.png);position: absolute;left: 0;top: 8px;}
+.sideprofl .d6 span i{display: inline-block;vertical-align: top;margin-top: 7px;width: 10px;height: 14px;background: url(http://www.maoyanmedia.com/static/image/icon13.png);margin-left: 5px;}
+.sideprofl .d7{width: 290px;height: 20px;font-size: 14px;color: rgba(255,255,255,0.39);line-height: 20px;position: absolute;left: 0;bottom: -30px;text-transform: uppercase;text-align: right;}
+.sideprofl .d7 i{display: inline-block;width: 48px;height: 2px;background: rgba(255,255,255,0.39);margin-left: 12px;vertical-align: top;margin-top: 9px;}
+.side1 .sideprofl .d7 i{margin-left: 7px;}
+.side3 .sideprofl .d7 i{margin-left: 7px;}
+.side4 .sideprofl .d3,.side4 .sideprofl .d5{color: #B8F297;}
+.side4 .sideprofl .d4{text-shadow:0px 3px 6px rgba(51,121,127,0.6);}
+.side4 .sideprofl .d6 span i{background: url(http://www.maoyanmedia.com/static/image/icon14.png);}
+.side4 .sideprofl .d7 i{width: 80px;}
+.side4 .sideprofr .sign .p1 span{background: #DEF2E0;color: #566F6D;}
+.side4 .sideprofr .sign .linksto a{box-shadow:0px 10px 14px 0px rgba(40,149,42,0.25);-webkit-box-shadow:0px 10px 14px 0px rgba(40,149,42,0.25);}
+.side4 .sideprofr .sign .linksto a:first-child{background: #23C07D;background: linear-gradient(to right #23C07D, #4FD62E);background: -webkit-linear-gradient(left, #23C07D, #4FD62E);}
+.side5 .sideprofl .d3,.side5 .sideprofl .d5{color: #FFD1B2;}
+.side5 .sideprofl .d4{text-shadow:0px 3px 6px rgba(214,16,63,1);}
+.side5 .sideprofl .d6 span i{background: url(http://www.maoyanmedia.com/static/image/icon15.png);}
+.side5 .sideprofl .d7 i{width: 92px;}
+.side5 .sideprofr .sign .p1 span{background: #FFE4D5;color: #8A6957;}
+.side5 .sideprofr .sign .linksto a{box-shadow:0px 10px 14px 0px rgba(255,93,93,0.25);-webkit-box-shadow:0px 10px 14px 0px rgba(255,93,93,0.25);}
+.side5 .sideprofr .sign .linksto a:first-child{background: #FB572D;background: linear-gradient(to right, #FB572D, #FE8A2B);background: -webkit-linear-gradient(left, #FB572D, #FE8A2B);}
+
+.side1 .sideprofl .d3 {color: #7283ec;}
+.side1 .sideprofl .d5 {color: #7283ec;}
+/*第三块 end*/
+
+/*第六块 start*/
+.fl {
+    display: inline;
+    float: left;
+}
+.clearfix {
+    clear: both;
+    zoom: 1;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.side-small-title h3 {
+    font-size: 28px;
+    color: rgba(0,0,0,1);
+    line-height: 40px;
+    margin: 0 10px 30px 0;
+}
+.side-small-title p {
+    font-size: 14px;
+    color: rgba(153,153,153,1);
+    line-height: 52px;
+}
+.side .case-application {
+    width: 698px;
+    height: 92px;
+    position: absolute;
+    right: 0;
+    top: -70px;
+}
+.side6{height:590px;padding:70px 0 0;background:linear-gradient(180deg,#F4F5FE 0%,#EFF0FB 100%);}
+.side6 .case-vedio{width: 580px;height: 520px;border-radius:4px;position: relative;background: #333}
+.side6 .case-vedio > img{width: 580px;height: 520px;border-radius:4px;-webkit-border-radius:4px;}
+.side6 .case-vedio .play_dialog a{width: 70px;height: 70px;position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: auto;z-index: 6;background: url(http://www.maoyanmedia.com/static/image/video_Start.png) no-repeat;}
+.video_dialog .video_content .video-frame{height:532px!important;padding-bottom:0!important}
+.video_dialog .video_content video{max-height:532px!important;width: auto!important;margin: 0 auto;}
+.side6 .case-vedio div{width: 100%;height: 100%;position: absolute;top: 0;z-index: 5;background: rgba(0,0,0,.5)}
+.side6 .case-content{width: 540px;margin: 0 0 0 80px}
+.side6 .case-content h2{font-size: 36px;color: #333;line-height: 50px;padding-bottom: 30px;border-bottom: 1px solid rgba(232,236,241,1);}
+.side6 .case-content ul{margin: 30px 0 56px}
+.side6 .case-content li{float: left;margin-right: 40px}
+.side6 .case-content li p{font-size: 28px;color: #FF0029;line-height: 40px;max-width: 100px;}
+.side6 .case-content li span{font-size: 14px;color: #333;line-height: 20px;}
+.side6 .case-content  i{display: block;width: 98px; height: 17px;background: url(http://www.maoyanmedia.com/static/image/css_sprites.png) -10px -10px;}
+.side6 .case-change{width: 660px;height: 220px;background: #fff;box-shadow:0px 9px 30px 0px rgba(209,219,248,0.3);border-radius: 4px;z-index: 10;position: absolute;bottom: 0;right: 0}
+.side6 .case-change>div{position: relative;width: 660px;height: 220px;}
+.side6 .prev-btn{z-index: 99;width: 64px;height: 64px;background: #535564;position: absolute;bottom: 0;right: 660px;cursor: pointer;transition: all .3s}
+.side6 .prev-btn i{display: block; width: 8px; height: 16px;background: url('http://www.maoyanmedia.com/static/image/css_sprites.png') -330px -110px;margin:24px auto;}
+.side6 .next-btn i{display: block; width: 8px; height: 16px;background: url('http://www.maoyanmedia.com/static/image/css_sprites.png') -330px -146px;margin:24px auto;}
+.side6 .next-btn{z-index: 99;width: 64px;height: 64px;background: #535564;position: absolute;bottom: 0;right: 596px;cursor: pointer;transition: all .3s}
+.side6 .next-btn:hover,.side6 .prev-btn:hover{background: #32333A}
+.side6 .content-num{width: 64px;height: 64px;line-height: 64px;color: #fff;font-size: 32px;text-align: center;background:linear-gradient(315deg,rgba(98,132,255,1) 0%,rgba(94,67,255,1) 100%);position: absolute;bottom: 64px;left: 0;}
+.side6 .video-slider .is-video:first-child{display: block}
+.side6 .video-slider .is-video{display: none}
+.side6 .case-change-info{width: 480px;position: absolute;top: 50px;left: 120px;}
+.side6 .case-change-info i{margin:15px 0;display: block; width: 28px; height: 4px;background: url(http://www.maoyanmedia.com/static/image/css_sprites.png)  -294px -182px;}
+.side6 .case-change-info h4{font-size: 20px;color: #333;line-height: 28px}
+.side6 .case-change-info p{font-size: 14px;color: #A0A1A7;line-height: 20px;height: 60px;overflow: hidden;}
+.side .case-application{width: 698px;height: 92px;position: absolute;right: 0;top: -70px}
+/*第六块 end*/
+
+/*第七块 start*/
+.ysmodule {padding: 60px 0;background: url(http://www.maoyanmedia.com/static/image/zlbg.png) top center no-repeat;width: 100%;
+    height: auto;
+    overflow: hidden;}
+.ysmodule ul li{width: 280px;height: 285px; float: left;background:#fff; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; box-shadow:0px 0px 10px rgba(0,0,0,0.15); float:left; margin:17px 13px 0px 0px; -webkit-transition: all 0.2s linear; padding-bottom:10px; margin-right: 24px; overflow:hidden;position: relative;cursor: pointer;}
+.ysmodule ul li:nth-child(4){margin-right: 0;}
+.ysmodule ul li .img{width:150px;height:150px; margin:30px auto 20px;}
+.ysmodule ul li .img img{width:100%; height:100%;}
+.ysmodule ul li h4{font-size:18px;color: #444444; background: url(http://www.maoyanmedia.com/static/image/ystitlebg.png) bottom center no-repeat;}
+.ysmodule ul li p{font-size:14px;color:#999;text-align:center; line-height:40px;}
+.ysmodule ul li .ysinfo{width: 280px;height:0px;background: #fff;overflow: hidden;position: absolute;left: 0;bottom: 0;}
+.ysmodule ul li .ysinfo dl{padding: 25px 30px;}
+.ysmodule ul li .ysinfo dl dt{font-size: 18px;color: #444444; line-height: 50px;background: url("http://www.maoyanmedia.com/static/image/dtbg.png") left bottom no-repeat; margin-bottom: 15px;}
+.ysmodule ul li .ysinfo dl dd{font-size: 14px;color: #666666;line-height: 40px;background: url( "http://www.maoyanmedia.com/static/image/ddicon.png") left center no-repeat; padding-left: 10px; }
+
+.middle{ width:1200px; margin:auto; text-align:left}
+.module h4 {
+    text-align: center;
+    font-size: 14px;
+    color: #cccccc;
+    height: 35px;
+    line-height: 35px;
+    background: url(https://www.ycqtg.com/static/index/shouye/images/h4bg.png) bottom center no-repeat;
+    text-transform: Uppercase;}
+
+
+.ysmt{width:1200px;margin:0 auto;
+font-size: 28px;
+    color: rgba(0,0,0,1);
+    line-height: 40px;
+	margin-bottom:13px;
+}
+.ysmt span{padding-left:10px;font-size:14px;color: rgba(153,153,153,1);line-height: 52px;}
+/*第七块 end*/
+
+/*第八块 start*/
+.brand {
+        /*display: inline-block;*/
+        height: 100%;
+        width: 1200px;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .brand h2 {
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 900;
+        height: 45px;
+        /* margin: 0 auto 10px auto; */
+        border-bottom: 2px solid #0080ff;
+    }
+
+    .brand .brand-main li {
+        float: left;
+        border: 1px solid #e5ece9;
+        margin: 10px;
+    }
+
+    .brand div {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 400px;
+        display: none;
+    }
+
+    .brand .tab {
+        margin: 40px auto;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .brand .tab li a {
+        float: left;
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+        line-height: 45px;
+        margin: 0 10px;
+        border: 1px solid #efefef;
+        color: #666;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .brand .tab li a:hover {
+        float: left;
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+        line-height: 45px;
+        margin: 0 10px;
+        border: 1px solid #0080ff;
+        color: #0080ff;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .brand .on {
+        display: block;
+    }
+
+    .brand .tab li a.cur {
+        background: #0080ff;
+        color: #fff;
+    }
+    #code {
+        /* background-image: url(http://www.maoyanmedia.com/static/css/code.jpg); */
+        font-family: Arial;
+        font-style: italic;
+        color: Red;
+        font-size: 20px;
+        border: 0;
+        padding: 2px 3px;
+        letter-spacing: 3px;
+        font-weight: bolder;
+        /*background-image: url(http://www.maoyanmedia.com/static/img/4.png) !important;*/
+    }
+/*第八块 end*/
+
+/*广告 start*/
+.admain{
+    height: 380px;
+    background: url(http://www.maoyanmedia.com/static/image/footer-5.png)no-repeat center top;
+	    width: 100%;
+    overflow: hidden;
+}
+.adone{
+    font-size: 30px;
+    line-height: 30px;
+    color: #0a1431;
+    text-align: center;
+    margin: 60px auto;
+}
+.adtwo{width:330px;height:47px;margin:0 auto;    padding-top: 50px;}
+.adtwo a{
+    border-radius: 8px;
+    width: 130px;
+    height: 45px;
+    border: 1px solid #e71f19;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+    font-size: 18px;
+    color: #fff;
+    margin-right: 30px;
+}
+.adtwo a.ap{color: #e71f19;}
+.adtwo a.bp{color: #fff;background: #e71f19;}
+/*广告 end*/

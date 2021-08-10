@@ -1,0 +1,61 @@
+
+.header{height:106px;border-bottom:1px solid #1e3368;position:absolute;left:0;top:0;width:100%;min-width:1360px;z-index:99999;}
+.header .logo{width:239px;height:106px;border-right:1px solid #1e3368;float: left;}
+.header .logo a::before{content: '';position: absolute;top: 0;left: 0;width: 15px;height: 14px;background-image: linear-gradient( rgba(0, 124, 239, 0.5), rgba(0, 124, 239, 0.5)), linear-gradient(0deg, rgba(71, 134, 223, 0.5) 0%, rgba(41, 109, 204, 0.5) 100%), linear-gradient( rgba(0, 124, 239, 0.5), rgba(0, 124, 239, 0.5));border-radius: 0 0 4px 0;opacity: 0.5;}
+.header .logo a{display:table-cell;vertical-align: middle;line-height: 106px;width:239px;height:106px;text-align:center;}
+.header .logo a img{max-width: 100%;max-height: 100%;}
+.header_center{margin-left:240px;height:106px;margin-right:280px}
+.header_center .top_left{float:left;}
+.header_center .top_right{float:right;}
+.header_center .center_top{height:20px;border-bottom:1px solid #1e3368;padding:10px 0;line-height:20px;}
+.header_center .center_top a{color: rgba(255, 255, 255, 0.3);padding:0 2px;position:relative;padding-bottom:10px;}
+.header_center .center_top a:hover .son{display:block;}
+.header_center .center_top{color: rgba(255, 255, 255, 0.3);}
+.header_center .center_top .top_left .entrance{margin-left:25px;background: url("http://www.maoyanmedia.com/static/image/icon_trumpet.png") no-repeat left center;padding-left:20px;}
+.header_center .center_top .top_left .entrance .center{color: red !important;}
+.header_center .center_top .top_left .entrance .login{color: rgba(255, 255, 255, 1) !important;}
+.header_center .center_top .top_left .entrance .login:hover{color: #39cea6 !important;}    
+.header_center .center_top .top_left .entrance  .regsiter{color: rgba(255, 255, 255, 0.6) !important;}
+.header_center .center_top .top_left .entrance  .regsiter:hover{color: rgb(255, 255, 255) !important;}
+.header_center .center_top .top_right .entrance a:hover{color:#fff;}
+.header_center .center_top .top_right .entrance a{margin-right:10px;padding:0 0 10px 0;}
+.header_center .center_top .top_right a::before{content:'';width:1px;height:8px;position: absolute;right:-7px;top:50%;margin-top:-8px;background:#fff;opacity:0.3;}
+.header_center .center_top .son{display:none;position: absolute;top: 20px;left: -30px;z-index: 40;width: 106px;height: 112px;background: url("http://www.maoyanmedia.com/static/image/code_bg.png") no-repeat center;}
+.header_center .center_top .son p{margin: 11px 5px 5px 5px; width: 96px; height: 96px; background: #ffffff;}
+.header_center .center_top .son p img{width:96px;height:96px;}
+.header_center .center_bottom{color:#ffffff;font-weight: bold;font-size:16px;text-align:center;padding:21px 0;}
+.header_center .center_bottom li{display:inline;padding:0 0.5%;line-height:24px;}
+.header_center .center_bottom a{padding:0 8px;color:#fff;font-weight: bold; font-size: 16px;}
+.header_center .center_bottom a:hover,.center_bottom a.on{color:#39cea6;}
+.header_center .center_bottom .home a{padding-left:20px;background:url(http://www.maoyanmedia.com/static/image/ico_home.png) no-repeat left center;}
+.header_center .center_bottom .home a:hover,.center_bottom .home a.on{background:url(http://www.maoyanmedia.com/static/image/ico_home_hover.png) no-repeat left center;}
+.header_center .center_bottom .header_search a{padding-left:26px !important;background: url("http://www.maoyanmedia.com/static/image/search.png") no-repeat left center;cursor:pointer;}
+.header_center .center_bottom .header_search>a:hover{background: url("http://www.maoyanmedia.com/static/image/search_hover.png") no-repeat left center;color:#39cea6;}
+.header_center .center_bottom .header_search{position:relative;}
+.header_center .center_bottom .header_search_box{display:none;}
+.header_center .header_search_box{position: absolute;background: #007cef;border-radius: 4px;right: 0;top: -24px;width: 646px;height: 67px;}
+.header_center .header_search_box .search_box{height:67px;}
+.header_center .search-ul-box{display:none;background:#fff;position:absolute;top: 67px;left: 65px;width: 514px;max-height: 468px;overflow-y: auto;padding:10px 0;border-radius:0 0 5px 5px;}
+.header_center .search-ul-box li{display:block;padding:0 !important;}
+.header_center .search-ul-box li a{height:40px;line-height:40px;padding:0 30px !important;display:block;font-size:14px;color:#848484 !important;text-align:left;}
+.header_center .search-ul-box li a:hover{color: #db5656 !important;}
+.header_center .search_close{width: 65px;height: 100%;background: #007cef url("http://www.maoyanmedia.com/static/image/cancel.png") no-repeat center;border-right: 1px solid #3f9cf1;-webkit-border-radius: 4px 0 0 4px;-moz-border-radius: 4px 0 0 4px;border-radius: 4px 0 0 4px;float:left;cursor:pointer;}
+.header_center .search_close:hover{background: #007cef url("http://www.maoyanmedia.com/static/image/cancel_hover.png") no-repeat center;}
+.header_center .search-input{width: 513px;height: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding-left: 28px;background: #007cef;color: #ffffff;font-size: 14px;}
+.header_center .go_search{cursor:pointer;float:right;width: 65px;height: 100%;background: #007cef url("http://www.maoyanmedia.com/static/image/search.png") no-repeat center;border-left: 1px solid #3f9cf1;-webkit-border-radius: 0 4px 4px 0;-moz-border-radius: 0 4px 4px 0;border-radius: 0 4px 4px 0;}
+.header_center .go_search:hover{background: #007cef url("http://www.maoyanmedia.com/static/image/search_hover.png") no-repeat center;}
+.header_right{height:106px;position:absolute;right:0;top:0;width:280px;}
+.header_right .right_bottom{height:40px;border-bottom:1px solid #1e3368;line-height:40px;font-size:14px;font-weight:700;color:#fff;text-indent:25px;width:100%;}
+.header_right .cearted{display: inline-block;width: 137px;height: 30px;line-height: 30px;text-align: center;background: url("http://www.maoyanmedia.com/static/image/header_btn.png") no-repeat center;margin:19px 0 0 91px;}
+.header_right .cearted span{padding-left:20px;background: url("http://www.maoyanmedia.com/static/image/need.png") no-repeat left center;color:#fff;}
+.header_right .cearted:hover{ background: url("http://www.maoyanmedia.com/static/image/header_btn_hover.png") no-repeat center;}
+/*软文信息流头部样式定制*/
+.cmhdespic .header{border-bottom: 1px solid rgba(255,255,255,0.1);}
+.cmhdespic .header .logo {border-right: 1px solid rgba(255,255,255,0.1);}
+.cmhdespic .header_center .center_top{border-bottom: 1px solid rgba(255,255,255,0.1);}
+.cmhdespic .header_right .right_bottom{border-bottom: 1px solid rgba(255,255,255,0.1);}
+.cmhdespic .header .top_left .welcome{color: rgba(255,255,255,0.3);}
+@media screen and (max-width: 1200px){
+    .header{min-width:1200px;}
+    .header_center .center_bottom a{padding: 0 6px;}
+}

@@ -1,0 +1,161 @@
+.weibo-view {padding-bottom: 60px;}
+/* å¾®åšå¹¿å‘Šå±•ç¤ºæ¨¡å— */
+.weibo-ad {padding-bottom: 80px!important;}
+.weibo-ad .tabs {margin-bottom: 30px;}
+.weibo-ad .tabs li {color: #999; font-size: 16px; padding: 60px 15px 5px 15px; margin-right: -4px; border-bottom: 2px solid #eee; margin-bottom: 60px; cursor: pointer;}
+.weibo-ad .tabs .cur {color: #4eb6ff!important; background: #fff; border-bottom: 2px solid #4eb6ff!important;}
+.weibo-ad .list .tanchu {display: none; position: absolute; background: #83ccff; font-size: 13px; color: #fff; text-align: left; padding: 5px; border-radius: 5px;}
+.weibo-ad .list .tanchu span {position: absolute; width: 0; height: 0;}
+.weibo-ad .list .detail-show1 {position: relative; width: 100%; height: 600px; font-size: 18px; color: #333; background: url("http://www.maoyanmedia.com/static/image/weibo-ad1.jpg") no-repeat center top;}
+.weibo-ad .list .detail-show1 > * {position: absolute;}
+.weibo-ad .list .detail-show1 .text1 {left: 255px; top: 62px; cursor: pointer;}
+.weibo-ad .list .detail-show1 .text1-angle {border-top: 8px solid #83ccff; border-left: 15px solid transparent; top: 26px; right: 18px;}
+.weibo-ad .list .detail-show1 .text1:hover {color: #4eb6ff;}
+.weibo-ad .list .detail-show1 .text1:hover .tanchu {display: block;}
+.weibo-ad .list .detail-show1 .text1 .tanchu {left: -100px; top: -33px;}
+.weibo-ad .list .detail-show1 .text2 {left: 185px; top: 108px; cursor: pointer;}
+.weibo-ad .list .detail-show1 .text2-angle {border-top: 8px solid #83ccff; border-left: 15px solid transparent; top: 26px; right: 18px;}
+.weibo-ad .list .detail-show1 .text2:hover {color: #4eb6ff;}
+.weibo-ad .list .detail-show1 .text2:hover .tanchu {display: block;}
+.weibo-ad .list .detail-show1 .text2 .tanchu {left: -80px; top: -33px;}
+.weibo-ad .list .detail-show1 .text3 {left: 221px; top: 188px; cursor: pointer;}
+.weibo-ad .list .detail-show1 .text3-angle {border-top: 8px solid #83ccff; border-left: 15px solid transparent; top: 26px; right: 18px;}
+.weibo-ad .list .detail-show1 .text3:hover .tanchu {display: block;}
+.weibo-ad .list .detail-show1 .text3:hover {color: #4eb6ff;}
+.weibo-ad .list .detail-show1 .text3 .tanchu {left: -180px; top: -33px;}
+.weibo-ad .list .detail-show1 .text4 {left: 221px; top: 286px; cursor: pointer;}
+.weibo-ad .list .detail-show1 .text4-angle {border-top: 8px solid #83ccff; border-left: 15px solid transparent; top: 26px; right: 18px;}
+.weibo-ad .list .detail-show1 .text4:hover {color: #4eb6ff;}
+.weibo-ad .list .detail-show1 .text4:hover .tanchu {display: block;}
+.weibo-ad .list .detail-show1 .text4 .tanchu {left: -140px; top: -33px;}
+.weibo-ad .list .detail-show1 .text5 {right: 255px; top: 166px; cursor: pointer;}
+.weibo-ad .list .detail-show1 .text5-angle {border-top: 8px solid #83ccff; border-right: 15px solid transparent; top: 26px; left: 18px;}
+.weibo-ad .list .detail-show1 .text5:hover {color: #4eb6ff;}
+.weibo-ad .list .detail-show1 .text5:hover .tanchu {display: block;}
+.weibo-ad .list .detail-show1 .text5 .tanchu {right: -200px; top: -33px;}
+.weibo-ad .list .detail-show1 .text6 {right: 255px; top: 409px; cursor: pointer;}
+.weibo-ad .list .detail-show1 .text6-angle {border-top: 8px solid #83ccff; border-right: 15px solid transparent; top: 26px; left: 18px;}
+.weibo-ad .list .detail-show1 .text6:hover {color: #4eb6ff;}
+.weibo-ad .list .detail-show1 .text6:hover .tanchu {display: block;}
+.weibo-ad .list .detail-show1 .text6 .tanchu {right: -140px; top: -33px;}
+.weibo-ad .list .detail-show1 .text7 {right: 217px; top: 546px; cursor: pointer;}
+.weibo-ad .list .detail-show1 .text7-angle {border-top: 8px solid #83ccff; border-right: 15px solid transparent; top: 26px; left: 18px;}
+.weibo-ad .list .detail-show1 .text7:hover {color: #4eb6ff;}
+.weibo-ad .list .detail-show1 .text7:hover .tanchu {display: block;}
+.weibo-ad .list .detail-show1 .text7 .tanchu {right: -220px; top: -33px;}
+.weibo-ad .list .detail-show2 {display: none; position: relative; width: 100%; height: 600px; font-size: 18px; color: #333; background: url("http://www.maoyanmedia.com/static/image/weibo-ad2.jpg") no-repeat center top;}
+.weibo-ad .list .detail-show2 > * {position: absolute;}
+.weibo-ad .list .detail-show2 .text1 {left: 60px; top: 177px; cursor: pointer;}
+.weibo-ad .list .detail-show2 .text1-angle {border-top: 8px solid #83ccff; border-left: 15px solid transparent; top: 44px; right: 18px;}
+.weibo-ad .list .detail-show2 .text1:hover .tanchu {display: block;}
+.weibo-ad .list .detail-show2 .text1:hover {color: #4eb6ff;}
+.weibo-ad .list .detail-show2 .text1 .tanchu {left: -75px; top: -50px;}
+.weibo-ad .list .detail-show2 .text2 {right: 62px; top: 233px;}
+.weibo-ad .list .detail-show3 > * {position: absolute;}
+.weibo-ad .list .detail-show3 {display: none; position: relative; width: 100%; height: 600px; font-size: 18px; color: #333; background: url("http://www.maoyanmedia.com/static/image/weibo-ad3.jpg") no-repeat center top;}
+.weibo-ad .list .detail-show3 .text1 {right: 1080px; top: 202px; cursor: pointer;}
+.weibo-ad .list .detail-show3 .text1-angle {border-top: 8px solid #83ccff; border-right: 15px solid transparent; top: 26px; left: 18px;}
+.weibo-ad .list .detail-show3 .text1:hover {color: #4eb6ff;}
+.weibo-ad .list .detail-show3 .text1:hover .tanchu {display: block;}
+.weibo-ad .list .detail-show3 .text1 .tanchu {right: -190px; top: -33px;}
+.weibo-ad .list .detail-show3 .text2 {right: 1078px; top: 421px; cursor: pointer;}
+.weibo-ad .list .detail-show3 .text2-angle {border-top: 8px solid #83ccff; border-right: 15px solid transparent; top: 26px; left: 18px;}
+.weibo-ad .list .detail-show3 .text2:hover {color: #4eb6ff;}
+.weibo-ad .list .detail-show3 .text2:hover .tanchu {display: block;}
+.weibo-ad .list .detail-show3 .text2 .tanchu {right: -124px; top: -33px;}
+.weibo-ad .list .detail-show3 .text3 {right: 10px; top: 191px; cursor: pointer;}
+.weibo-ad .list .detail-show3 .text4 {right: 28px; top: 359px; cursor: pointer;}
+.weibo-ad .list .detail-show3 .text4-angle {border-top: 8px solid #83ccff; border-right: 15px solid transparent; top: 44px; left: 15px;}
+.weibo-ad .list .detail-show3 .text4:hover {color: #4eb6ff;}
+.weibo-ad .list .detail-show3 .text4:hover .tanchu {display: block;}
+.weibo-ad .list .detail-show3 .text4 .tanchu {right: -80px; top: -53px;}
+.weibo-ad .list .detail-show3 .text5 {right: 551px; top: -27px;}
+.weibo-ad .list .detail-show3 .text5-angle {border-top: 8px solid #83ccff; border-right: 15px solid transparent; top: 26px; left: 18px;}
+.weibo-ad .list .detail-show3 .text3:hover {color: #4eb6ff;}
+.weibo-ad .list .detail-show3 .text3:hover .tanchu {display: block;}
+.weibo-ad .list .detail-show3 .text3 .tanchu {right: -45px; top: -33px;}
+
+/* å¾®åšKOLåˆ†ç±»æ¨¡å— */
+.weibo-kol .inline-block {display: inline-block; }
+.weibo-kol .okl {margin: 0 auto; width: 1200px; height: 760px; background: #f7f7f7; position: relative;}
+.weibo-kol .okl .verlical-arrow {position: absolute; width: 0; height: 0; border-left: 2px solid #90c4f7; border-top: 520px solid #90c4f7; left: 599px; top: 120px; z-index: 10;}
+.weibo-kol .okl .level-arrow {position: absolute; width: 0; height: 0; border-left: 520px solid #90c4f7; border-top: 2px solid #91c4f7; left: 340px; top: 379px; z-index: 10;}
+.weibo-kol .okl .arrow {position: absolute;}
+.weibo-kol .okl .top-triangle {width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 10px solid #91c4f7; left: 595px; top: 110px; z-index: 20;}
+.weibo-kol .okl .right-triangle {width: 0; height: 0; border-top: 5px solid transparent; border-left: 10px solid #91c4f7; border-bottom: 5px solid transparent; left: 860px; top: 375px; z-index: 20;}
+.weibo-kol .okl .bottom-triangle {width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 10px solid #91c4f7; left: 595px; top: 640px; z-index: 20;}
+.weibo-kol .okl .left-triangle {width: 0; height: 0; border-top: 5px solid transparent; border-right: 10px solid #91c4f7; border-bottom: 5px solid transparent; left: 330px; top: 375px; z-index: 20;}
+.weibo-kol .okl .okl-title {width: 100px; height: 40px; line-height: 40px; border-radius: 15px; background: #90c4f7; color: #fff; font-size: 18px; text-align: center; position: absolute;}
+.weibo-kol .okl .top-title {left: 550px; top: 65px;}
+.weibo-kol .okl .right-title {left: 875px; top: 360px;}
+.weibo-kol .okl .bottom-title {left: 550px; top: 655px;}
+.weibo-kol .okl .left-title {left: 225px; top: 360px;}
+.weibo-kol .okl .okl-text {width: 170px;  padding: 14px 0; border-radius: 10px; background: #90c4f7; color: #fff; font-size: 18px; text-align: left; position: absolute;}
+.weibo-kol .okl .top-text {left: 620px; top: 270px;}
+.weibo-kol .okl .right-text {left: 620px; top: 400px;}
+.weibo-kol .okl .bottom-text {left: 410px; top: 400px;}
+.weibo-kol .okl .left-text {left: 410px; top: 270px;}
+.weibo-kol .okl .okl-text div {margin: 5px -4px 5px 22px;}
+.weibo-kol .okl .okl-desc { width: 100px; padding: 14px 0; font-size: 18px; color: #f79082; border: 1px dashed #f79082; border-radius: 50%; text-align: center; position: absolute;}
+.weibo-kol .okl .top-desc {left: 810px; top: 165px;}
+.weibo-kol .okl .right-desc {left: 810px; top: 495px;}
+.weibo-kol .okl .bottom-desc {padding: 26px 0; left: 290px; top: 495px;}
+.weibo-kol .okl .left-desc {left: 290px; top: 165px;}
+.weibo-kol .okl .top-desc-arrow,
+.weibo-kol .okl .right-desc-arrow,
+.weibo-kol .okl .bottom-desc-arrow,
+.weibo-kol .okl .left-desc-arrow {position: absolute;}
+.weibo-kol .okl .top-desc-arrow {left: -6px; top: 66px;}
+.weibo-kol .okl .right-desc-arrow {left: -12px; top: 7px;}
+.weibo-kol .okl .bottom-desc-arrow {left: 89px; top: 12px;}
+.weibo-kol .okl .left-desc-arrow {left: 74px; top: 76px;}
+
+/* å¾®åšåª’ä½“æŠ•æ”¾ç­–ç•¥ */
+.weibo-tactics > p {margin-bottom: 60px;}
+.weibo-tactics .tactics {background: #f7f7f7;}
+.weibo-tactics .tactics-title {color: #333; font-size: 18px;}
+.weibo-tactics .tactics {background: #f7f7f7; padding-top: 60px; padding-bottom: 40px;}
+.weibo-tactics .inline-block {display: inline-block; vertical-align: top;}
+.weibo-tactics .left-tactics {position: relative; width: 410px;}
+.weibo-tactics .tactics-desc {position: relative;}
+.weibo-tactics .center-tactics {width: 410px;}
+.weibo-tactics .right-tactics {width: 160px;}
+.weibo-tactics .top-bg {position: absolute; width: 0; height: 0; border-left: 75px solid transparent; border-right: 75px solid transparent; border-bottom: 150px solid #f79082; left: 130px; top: 50px;}
+.weibo-tactics .center-bg {position: absolute; width: 150px; height: 0; border-left: 55px solid transparent; border-right: 55px solid transparent; border-bottom: 120px solid #88cea4; left: 75px; top: 200px;}
+.weibo-tactics .bottom-bg {position: absolute; width: 260px; height: 0; border-left: 75px solid transparent; border-right: 75px solid transparent; border-bottom: 160px solid #90c4f7; left: 0px; top: 320px;}
+.weibo-tactics .tactics .top-text, .tactics .center-text, .tactics .bottom-text {position: absolute; color: #fff; font-size: 18px; left: 170px;}
+.weibo-tactics .tactics .top-text {top: 140px;}
+.weibo-tactics .tactics .center-text {top:250px;}
+.weibo-tactics .tactics .bottom-text {top: 390px;}
+.weibo-tactics .tactics-desc {padding-top: 50px;}
+.weibo-tactics .tactics-desc:last-child {margin-left: 20px;}
+.weibo-tactics .tactics-desc > div {margin-left: auto; margin-right: auto;}
+.weibo-tactics .desc-text {position: relative; margin-top: 90px; padding-bottom: 20px; border-bottom: 2px dashed #eee; text-align: left; color: #333; font-size: 18px;}
+.weibo-tactics .desc-text span {color: #666; font-size: 16px;}
+.weibo-tactics .bottom-arrow {display: inline-block; position: absolute; color: #eee!important; font-weight: bold; top: 32px; left: 400px;}
+.weibo-tactics .tactics-desc .circle {font-size: 24px; color: #fff; margin-bottom: 40px;}
+.weibo-tactics .top-circle {height: 140px; width: 140px; line-height: 140px; background: #f79082; border-radius: 50%;}
+.weibo-tactics .center-circle {height: 110px; width: 110px; line-height: 110px; background: #88cea4; border-radius: 50%;}
+.weibo-tactics .bottom-circle {height: 90px; width: 90px; line-height: 90px; background: #90c4f7; border-radius: 50%;}
+
+
+/* å¾®åšåª’ä½“æŠ•æ”¾åˆ†æžæ¨¡å— */
+.weibo-analysis {position: relative; padding-bottom: 80px!important;}
+.weibo-analysis > p {padding-bottom: 100px;}
+.weibo-analysis .analysis {position: relative;}
+.weibo-analysis .arrow1,
+.weibo-analysis .arrow2 {position: absolute;}
+.weibo-analysis .arrow1 {left: 341px; top: 368px;}
+.weibo-analysis .arrow2 {left: 770px; top: 400px;}
+.weibo-analysis .analysis > div {display: inline-block; vertical-align: top; width: 310px; height: 320px; margin: 0 60px; background: #f7f7f7; border-top-left-radius: 10px; border-top-right-radius: 10px;}
+.weibo-analysis .analysis > div:first-child {margin-left: 0;}
+.weibo-analysis .analysis > div:last-child {margin-right: 0;}
+.weibo-analysis .analysis .analysis-title1,
+.weibo-analysis .analysis .analysis-title2,
+.weibo-analysis .analysis .analysis-title3 {font-size: 28px; color: #fff; height: 75px; line-height: 75px; border-top-left-radius: 10px; border-top-right-radius: 10px;}
+.weibo-analysis .analysis .analysis-title1 {background: #88cea4;}
+.weibo-analysis .analysis .analysis-title2 {background: #f79082;}
+.weibo-analysis .analysis .analysis-title3 {background: #7ccbd0;}
+.weibo-analysis .analysis .title {text-align: left; text-indent: 15px; color: #666; font-size: 18px; margin-top: 20px;}
+.weibo-analysis .analysis p {color: #999; font-size: 16px; text-align: left; padding-left: 15px; padding-right: 20px; margin: 10px 0;}
+.weibo-analysis .analysis p.text {margin-top: 20px;}

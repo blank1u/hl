@@ -1,0 +1,244 @@
+.live-banner {
+  width: 100%;
+  height: 560px;
+  background: url("http://www.maoyanmedia.com/static/image/live_banner.png") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+.live-banner .live-banner-content {
+  width: 1170px;
+  margin: 167px auto;
+  color: #fff;
+}
+.live-banner .live-banner-content > h3 {
+  font-size: 32px;
+  height: 32px;
+  color: #fff;
+  margin: 0;
+}
+.live-banner .live-banner-content > h1 {
+  height: 48px;
+  line-height: 48px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 34px;
+  margin-bottom: 37px;
+}
+.live-banner .live-banner-content > p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 25px;
+  letter-spacing: 2px;
+  margin-top: 35px;
+}
+.live-banner .live-banner-content > a {
+  display: block;
+  width: 190px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #5185FF;
+  border-radius: 23px;
+  margin-top: 38px;
+  color: #fff;
+  text-decoration: none;
+}
+.live-banner .live-banner-content > a:hover {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.live-statue {
+  width: 100%;
+  height: 734px;
+  background: url("http://www.maoyanmedia.com/static/image/public_half_circle.png") left top no-repeat #fff;
+}
+.live-statue .live-statue-content {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.live-statue .txt-left {
+  margin-left: 0;
+  text-align: left;
+}
+.live-statue > img {
+  width: 1200px;
+  height: 585px;
+}
+.live-dowhat {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  height: 1441px;
+}
+.live-dowhat .live-dowhat-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.live-dowhat .live-dowhat-content > img {
+  width: 864px;
+  display: block;
+  margin: 60px auto;
+}
+.live-resource {
+  width: 100%;
+  height: 740px;
+  background: url("http://www.maoyanmedia.com/static/image/live_resource_bg.png") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+.live-resource .live-resource-tabbar {
+  width: 480px;
+  margin: 24px auto 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background-color: #F5FAFF;
+  font-size: 16px;
+  color: #666;
+}
+.live-resource .live-resource-tabbar .live-resource-tabbar-li {
+  float: left;
+  width: 120px;
+}
+.live-resource .live-resource-tabbar .live-resource-tabbar-li:hover {
+  color: #5185ff;
+  cursor: pointer;
+}
+.live-resource .live-resource-tabbar .live-resource-tabbar-checked {
+  height: 64px;
+  line-height: 64px;
+  margin-top: -8px;
+  background-color: #5185ff;
+  color: #fff;
+}
+.live-resource .live-resource-tabbar .live-resource-tabbar-checked:hover {
+  color: #fff;
+}
+.live-resource .live-resource-content {
+  width: 1200px;
+  margin: 0 auto 50px;
+}
+.live-resource .live-resource-content .live-resource-content-li {
+  width: 280px;
+  height: 360px;
+  background: #ffffff;
+  box-shadow: 3px 0px 30px rgba(205, 205, 205, 0.3);
+  border-radius: 6px;
+  float: left;
+  margin-right: 25px;
+  position: relative;
+}
+.live-resource .live-resource-content .live-resource-content-li > img {
+  width: 280px;
+  height: 200px;
+  display: block;
+  border: 1px solid #efefef;
+}
+.live-resource .live-resource-content .live-resource-content-li .live-resource-content-li-mid {
+  padding: 20px 20px 0;
+}
+.live-resource .live-resource-content .live-resource-content-li .live-resource-content-li-mid .live-resource-content-li-mid-avatar {
+  width: 60px;
+  height: 60px;
+  float: left;
+  position: relative;
+}
+.live-resource .live-resource-content .live-resource-content-li .live-resource-content-li-mid .live-resource-content-li-mid-avatar > img {
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #efefef;
+}
+.live-resource .live-resource-content .live-resource-content-li .live-resource-content-li-mid .live-resource-content-li-mid-avatar .live-resource-platform {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: url("http://www.maoyanmedia.com/static/image/platform.png") 123px 238px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border: 1px solid #efefef;
+}
+.live-resource .live-resource-content .live-resource-content-li .live-resource-content-li-mid .live-resource-content-li-mid-avatar .platform-douyu {
+  background: url("http://www.maoyanmedia.com/static/image/platform.png") 125px 31px;
+}
+.live-resource .live-resource-content .live-resource-content-li .live-resource-content-li-mid .live-resource-content-li-mid-info {
+  float: left;
+  margin-left: 18px;
+}
+.live-resource .live-resource-content .live-resource-content-li .live-resource-content-li-mid .live-resource-content-li-mid-info .live-resource-content-li-nickname {
+  font-size: 16px;
+  color: #333;
+}
+.live-resource .live-resource-content .live-resource-content-li .live-resource-content-li-mid .live-resource-content-li-mid-info .live-resource-content-li-details {
+  margin-top: 14px;
+}
+.live-resource .live-resource-content .live-resource-content-li .live-resource-content-li-mid .live-resource-content-li-mid-info .live-resource-content-li-details .live-resource-content-li-fansnum {
+  width: 70px;
+  margin-right: 20px;
+  float: left;
+}
+.live-resource .live-resource-content .live-resource-content-li .live-resource-content-li-mid .live-resource-content-li-mid-info .live-resource-content-li-details .live-resource-content-li-fansnum > p {
+  font-size: 12px;
+  color: #B2AEBB;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.live-resource .live-resource-content .live-resource-content-li .live-resource-content-li-mid .live-resource-content-li-mid-info .live-resource-content-li-details .live-resource-content-li-fansnum > h4 {
+  font-size: 14px;
+  color: #FF0035;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.live-resource .live-resource-content .live-resource-content-li .live-resource-content-li-mid .live-resource-content-li-mid-info .live-resource-content-li-details .live-resource-content-li-fansnum:last-child {
+  margin-right: 0;
+}
+.live-resource .live-resource-content .live-resource-content-li .live-resource-content-li-bot {
+  width: 240px;
+  margin: 0 auto;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  border-top: 1px solid #efefef;
+  font-size: 16px;
+  color: #999;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.live-resource .live-resource-content .live-resource-content-li .live-resource-content-li-bot:hover {
+  text-decoration: none;
+  color: #5185ff;
+  cursor: pointer;
+}
+.live-resource .live-resource-content .live-resource-content-li:last-child {
+  margin-right: 0;
+}
+.live-resource .live-look-more {
+  display: block;
+  width: 150px;
+  height: 46px;
+  line-height: 46px;
+  margin: 50px auto;
+  text-align: center;
+  color: #5185ff;
+  border: 1px solid #3f84ff;
+  text-decoration: none;
+}
+.live-resource .live-look-more:hover {
+  background-color: #5185ff;
+  color: #fff;
+  cursor: pointer;
+}
+/*# sourceMappingURL=live.css.map */

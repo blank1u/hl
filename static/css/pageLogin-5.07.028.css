@@ -1,0 +1,189 @@
+
+/* 4eb6ff */
+
+.top-tip-boswer {height:36px; line-height:36px; border:1px #d5d583 solid; background:#ffffdb; color:#d00; text-align:center; font-size:16px;}
+.top-tip-boswer a {color:#4eb6ff;}
+
+.logreg .banner-box {position:relative; float:left; width:700px; height:500px; margin-left:40px; margin-top:30px; overflow:hidden;}
+.logreg .banner-box .banner {position:absolute; top:0; left:-50%; width:200%; height:100%;}
+.logreg .banner-box .banner img {height:100%; margin:0 auto;}
+
+.userRegLoginContain {width:360px; overflow:hidden; font-family:microsoft yahei; font-size:12px; background:#f7f7f7;}
+.userRegLoginContain.pageLogin {position:absolute; top:33px; right:0; box-shadow:2px 2px 10px #444; z-index:3;}
+.userRegLoginContain.loginPage,
+.userRegLoginContain.regPage {position:absolute; top:60px; right:60px;}
+
+/*---------- 广告主媒介主选择 ----------*/
+.userRegLoginContain .typeChose {height:50px;}
+.userRegLoginContain .typeChose label {float:left; position:relative; width:50%; height:50px; line-height:50px; text-align:center; font-size:1.45em; cursor:pointer; outline:1px #e0e0e0 solid; background:#eee; z-index:2;}
+.userRegLoginContain .typeChose label i {position:absolute; width:60px; height:3px; background:#4eb6ff; bottom:0; left:-9999px; margin-left:-30px;}
+#companyTypeRadio:checked ~ .typeChose label.company,
+#websiteTypeRadio:checked ~ .typeChose label.website {background:#f7f7f7; color:#4eb6ff; outline:none; z-index:1;}
+#companyTypeRadio:checked ~ .typeChose label.company i,
+#websiteTypeRadio:checked ~ .typeChose label.website i {left:50%;}
+.userRegLoginContain .typeChose span {float:left; position:relative; width:50%; height:50px; line-height:50px; text-align:center; font-size:1.45em; cursor:pointer; outline:1px #e0e0e0 solid; background:#eee; z-index:2;}
+.userRegLoginContain .typeChose span i {position:absolute; width:60px; height:3px; bottom:0; left:-9999px; margin-left:-30px;}
+.userRegLoginContain .typeChose span.company i {background:#4eb6ff;}
+.userRegLoginContain .typeChose span.website i {background:#ff632b;}
+.userRegLoginContain .typeChose span.active {background:#f7f7f7; color:#4eb6ff; outline:none; z-index:1;}
+.userRegLoginContain .typeChose span.active.company {color:#4eb6ff;}
+.userRegLoginContain .typeChose span.active.website {color:#ff632b;}
+.userRegLoginContain .typeChose span.active i {left:50%;}
+/*---------- 广告主媒介区域 ----------*/
+.userRegLoginContain .con {width:100%; position:relative; left:0;}
+.userRegLoginContain .con .fcon {float:left; width:84%; padding:20px 8%; padding-bottom:0;}
+/*.userRegLoginContain .con .fcon.website {display:none;}*/
+#companyTypeRadio:checked ~ .con {left:0;}
+#websiteTypeRadio:checked ~ .con {left:-100%;}
+/*#websiteTypeRadio:checked ~ .con .fcon.website {display:block;}*/
+
+
+/*--- 表单样式 ---*/
+ul.userRegLoginform {display:table; width:100%;}
+ul.userRegLoginform.hide {display:none;}
+ul.userRegLoginform li {width:100%; margin-bottom:16px;}
+ul.userRegLoginform .input {margin-right:2px; position:relative;}
+ul.userRegLoginform .input input {width:100%; height:40px; line-height:40px; text-indent:40px; font-size:1.15em; border:1px #e0e0e0 solid; border-radius:4px;}
+ul.userRegLoginform .input input {background:#fff url(https://www.ycqtg.com/front/public/images/icon-forgetPass2.png) left top no-repeat;}
+ul.userRegLoginform .input input.error {border:1px #f66 solid;}
+ul.userRegLoginform .input input:focus, 
+ul.userRegLoginform .input input.error:focus {border:1px #4eb6ff solid;}
+ul.userRegLoginform .input input.user {background-position:0 0;}
+ul.userRegLoginform .input input.pass {background-position:0 -160px;}
+ul.userRegLoginform .input input.pass1 {background-position:0 -120px;}
+ul.userRegLoginform .input input.pass2 {background-position:0 -160px;}
+ul.userRegLoginform .input input.code {background-position:0 -40px;}
+ul.userRegLoginform .input input.smsCode {background-position:0 -80px;}
+/*--- 密码框上的小眼睛 ---*/
+ul.userRegLoginform .input .eye {position:absolute; width:40px; height:40px; top:1px; right:1px; background:url(https://www.ycqtg.com/front/public/images/icon-forgetPass2.png) left top no-repeat;}
+ul.userRegLoginform .input .eye {background-position:0 -240px; display:none\9;}
+ul.userRegLoginform .input .eye:hover {background-position:0 -200px;}
+/*--- 获取验证码 ---*/
+ul.userRegLoginform .input .getyzm {position:absolute; top:8px; right:8px;}
+ul.userRegLoginform .input .getyzm .sms {float:left; height:26px; line-height:26px; color:#fff; padding:0 10px; border-radius:5px;}
+ul.userRegLoginform .input .getyzm .sms.get.blue {background:#4eb6ff; cursor:pointer;}
+ul.userRegLoginform .input .getyzm .sms.get.disabled {background:#b9b9b9; cursor:not-allowed;}
+/*--- 验证码发送提示 ---*/
+ul.userRegLoginform .input .smsTip {position:absolute; display:none; bottom:100%; left:20%; margin-bottom:10px; background:rgba(0,0,0,.7); background:url(https://www.ycqtg.com/front/public/images/opacity/black7.png)\9; height:40px; line-height:40px; font-size:1.35em; color:#fff; padding:0 25px; border-radius:8px;}
+/*--- 图形验证码 ---*/
+ul.userRegLoginform .input .imgYzm {position:absolute; height:28px; right:7px; top:7px; cursor:pointer;}
+ul.userRegLoginform .input .imgYzm img {height:100%;}
+/*--- 错误提示 ---*/
+ul.userRegLoginform .input .tip {position:absolute; bottom:100%; left:0; height:32px; line-height:32px; padding:0 15px; font-size:1.2em; border-radius:5px; visibility:hidden; z-index:2;}
+ul.userRegLoginform .input .tip b {position:absolute; width:14px; height:14px; background:#f66; top:100%; margin-top:-8px; left:30px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-ms-transform:rotate(45deg);
+transform:rotate(45deg);
+display:none\9;} 
+ul.userRegLoginform .input .tip.error {background:#f66; color:#fff; visibility:visible;}
+ul.userRegLoginform .input .tip.ok {visibility:hidden;}
+/*客服QQ*/
+ul.userRegLoginform .input .tip .qq {display:inline-block; margin-left:5px; width:22px; height:10px; position:relative;}
+/*ul.userRegLoginform .input .tip .qq a {position:absolute; width:22px; height:22px; top:50%; margin-top:-11px; left:0; background:url(http://www.maoyanmedia.com/front/public/images/icon-cart-qq.png) center no-repeat;}*/
+ul.userRegLoginform .input .tip .qq a {position:absolute; width:20px; height:20px; top:50%; margin-top:-10px; left:0; background:url(https://www.ycqtg.com/front/public/images/icon-service-qq.png) left top no-repeat;}
+ul.userRegLoginform .input .tip .qq a:hover {background-position:0 -20px;}
+ul.userRegLoginform .input input:focus + .tip.error {visibility:hidden;}
+/*--- 大按钮 ---*/
+ul.userRegLoginform .bigBtn .btn {display:block; height:40px; line-height:40px; font-size:1.3em; color:#fff; text-align:center; border-radius:6px; cursor:pointer;}
+ul.userRegLoginform .bigBtn .btn.orange {background:#4eb8ff;}
+ul.userRegLoginform .bigBtn .btn.realOrange {background:#ff632b;}
+ul.userRegLoginform .bigBtn .btn.red {background:#f66;}
+ul.userRegLoginform .bigBtn .btn.blue {height:38px; line-height:38px; color:#4eb6ff; background:#fff; border:1px #4eb6ff solid;}
+/*--- 文本内容 ---*/
+ul.userRegLoginform .txts > span {height:18px; line-height:18px; font-size:1.15em;}
+ul.userRegLoginform .txts > span.fl {float:left;}
+ul.userRegLoginform .txts > span.fr {float:right;}
+ul.userRegLoginform .txts > span.center {display:block; text-align:center;}
+ul.userRegLoginform .txts > span a.blue {color:#4eb6ff;}
+ul.userRegLoginform .txts > span a.red {color:#f33;}
+ul.userRegLoginform .txts > span a:hover {text-decoration:underline;}
+/*--- 用户信息 ---*/
+ul.userRegLoginform .theUser {height:158px;}/*192*/
+ul.userRegLoginform .theUser .userToux {display:table; margin:0 auto; padding-top:10px;} /*padding-top:25px*/
+ul.userRegLoginform .theUser .userToux span {position:relative; display:block; width:100px; height:100px; border:3px #eee solid; border-radius:50%; overflow:hidden;}
+ul.userRegLoginform .theUser .userToux span b {position:absolute; width:200%; height:100%; left:-50%; background:url(https://www.ycqtg.com/static/index/weib/front/public/images/userToux.jpg) center center no-repeat;}
+ul.userRegLoginform .theUser .userToux span b img {margin:0 auto; height:100%;}
+ul.userRegLoginform .theUser .userInfo {margin-top:20px; text-align:center; font-size:1.3em;} /*margin-top:25px*/
+
+/*--- 记住密码 ---*/
+ul.userRegLoginform .txts span .remember label {display:inline-block; height:18px; line-height:18px; padding-left:20px; position:relative;}
+ul.userRegLoginform .txts span .remember label i {position:absolute; left:0; top:0; width:16px; height:16px; border:1px #e0e0e0 solid; border-radius:4px; overflow:hidden;}
+ul.userRegLoginform .txts span .remember label i b {position:absolute; text-align:center; color:#333; opacity:0;}
+ul.userRegLoginform .txts span .remember label i b:before {content:"✔";}
+#remember1:checked + label[for="remember1"] i b,
+#remember2:checked + label[for="remember2"] i b,
+#xycompany:checked + label[for="xycompany"] i b,
+#xywebsite:checked + label[for="xywebsite"] i b {opacity:1;}
+
+/*--- 登录页面 ---*/
+.logreg.page {background:#f7f7f7; padding:50px 0; padding-bottom:80px;}
+.logreg.page .reg {height:560px; background:#fff; position:relative;}
+.logreg.page .reg .logreg-box {right:60px; top:60px;
+-webkit-box-shadow:none;
+-moz-box-shadow:none;
+-ms-box-shadow:none;
+box-shadow:none;}
+.logreg.page .reg .logreg-box .con .fcon {padding-bottom:20px;}
+
+/*--- 验证码弹出层 ---*/
+.popImgYzm .box .tit {height:40px; line-height:40px; text-align:center; font-size:1.5em;}
+.popImgYzm .box .con {width:350px; padding:15px 25px; padding-bottom:0;}
+.popImgYzm .box .con .bigBtn {display:table; width:100px; margin:0 auto;}
+.popImgYzm .box.tip .con .txt {height:60px; font-size:1.25em; line-height:26px; text-align:center; color:#999;}
+.popImgYzm .box.tip .con .txt span {color:#333;}
+
+/*--- 协议弹出层 ---*/
+.popXieyi .box {width:800px;}
+.popXieyi .box .theXieYi {padding:0 25px;}
+.popXieyi .box .theXieYi .xy-tit {height:40px; line-height:40px; text-align:center; font-size:1.5em; color:#4eb6ff;}
+.popXieyi .box .theXieYi .xyCon {height:400px; overflow-y:auto; font-size:1.2em; margin:15px 0;}
+.popXieyi .box .theXieYi .xyCon .blod {font-weight:bold; font-size:1.05em;}
+.popXieyi .box .theXieYi .xyCon .nr {line-height:22px;}
+.popXieyi .box .theXieYi .xyCon .part {margin-top:30px;}
+.popXieyi .box .theXieYi .xyCon .part .part-tit {color:#d00; font-size:1.05em; font-weight:bold; padding-bottom:5px;}
+.popXieyi .box .theXieYi .xyCon .part .part-con {line-height:24px;}
+
+
+/*========== 找回密码页面 ==========*/
+.forget {background:#f7f7f7; padding:40px 0; padding-bottom:70px;}
+.forget .fg-box {background:#fff; padding:30px; border-radius:6px;}
+/*---------- 找回帐号密码 ----------*/
+.forget .fg-box .fg-tit {font-size:1.3em; height:40px; border-bottom:1px #f6f6f6 solid; margin-bottom:40px;}
+/*---------- 步骤 ----------*/
+.forget .fg-box .fg-steps {width:650px; height:80px; margin:0 auto; margin-bottom:40px; position:relative;}
+.forget .fg-box .fg-steps i {display:block; height:30px; border-bottom:1px #eee solid; margin:0 40px;}
+.forget .fg-box .fg-steps .step {position:absolute; width:80px; top:0; z-index:2;}
+.forget .fg-box .fg-steps .step b {display:block; width:40px; height:40px; line-height:40px; margin:0 auto; text-align:center; font-size:2em; font-weight:normal; color:#fff; border:10px #fff solid; background:#e0e0e0; border-radius:50%;}
+.forget .fg-box .fg-steps .step.s1 {left:0;}
+.forget .fg-box .fg-steps .step.s2 {left:50%; margin-left:-40px;}
+.forget .fg-box .fg-steps .step.s3 {right:0;}
+.forget .fg-box .fg-steps .step.s1 b:before {content:"1";}
+.forget .fg-box .fg-steps .step.s2 b:before {content:"2";}
+.forget .fg-box .fg-steps .step.s3 b:before {content:"3";}
+.forget .fg-box .fg-steps .step span {display:block; text-align:center; font-size:1.15em; color:#aaa;}
+.forget .fg-box .fg-steps .step.s1 span:before {content:"验证身份";}
+.forget .fg-box .fg-steps .step.s2 span:before {content:"设置新密码";}
+.forget .fg-box .fg-steps .step.s3 span:before {content:"完成";}
+.forget .fg-box .fg-steps .active b {background:#4eb6ff;}
+.forget .fg-box .fg-steps .active span {color:#4eb6ff;}
+/*----- 密码设置成功 -----*/
+.forget .stepForm {width:320px; margin:0 auto;}
+.forget .stepForm .typeChose {display:table; width:200px; margin:0 auto; height:50px; margin-bottom:30px;}
+.forget .stepForm .typeChose span {float:left; position:relative; width:30%; margin:0 10%; height:100%; text-align:center; line-height:50px; font-size:1.3em; white-space:nowrap; cursor:pointer;}
+.forget .stepForm .typeChose span i {position:absolute; width:100%; height:3px; background:#fff; bottom:0; left:0;}
+.forget .stepForm .typeChose span:hover,
+.forget .stepForm .typeChose span.active {color:#4eb6ff;}
+.forget .stepForm .typeChose span:hover i,
+.forget .stepForm .typeChose span.active i {background:#4eb6ff;}
+.forget .stepForm .userMobile {height:30px; font-size:1.2em;}
+.forget .stepForm .passSuccess {height:110px;}
+.forget .stepForm .passSuccess .passOk {float:left;}
+.forget .stepForm .passSuccess .passOkText b {display:block; font-size:2em; font-weight:normal; color:#333; padding:5px 0;}
+.forget .stepForm .passSuccess .passOkText span {font-size:1.15em; color:#a1a1a1;}
+
+
+
+input.none {position:fixed; left:-9999px; top:50%;}
+
+

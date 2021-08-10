@@ -1,0 +1,103 @@
+.global {margin: 0 auto; padding-top: 60px; padding-bottom: 40px; width: 1200px; text-align: center; color: #333;}
+.h2-title {color: #333; font-size: 36px; margin-bottom: 20px;}
+.p-text {color: #666; font-size: 18px;}
+.inline-block {display: inline-block;}
+.vertical-middle {vertical-align: middle;}
+.vertical-top {vertical-align: top;}
+
+/* æŽ¨å¹¿é¡µæˆåŠŸæ¡ˆä¾‹æ¨¡å— */
+.success-case {padding-bottom: 0;}
+.success-case .case-content {background: #fff; text-align: left; margin-top: 40px; padding: 30px 0 60px 30px;}
+.success-case .case-content .case-title h2 {font-size: 36px; margin-bottom: 6px; color: #333;}
+.success-case .case-content .case-title h3 {font-size: 22px; color: #666; margin-bottom: 40px;}
+.success-case .case-content > div {display: inline-block; vertical-align: top;}
+.success-case .case-content .tabs-nav {border-right: 1px solid #ccc; text-align: center; width: 200px; margin-top: 50px;}
+.success-case .case-content .list {margin-left: 60px; width: 900px;}
+.success-case .case-content li {display: block; padding: 35px 30px 35px 40px; color: #666; font-size: 18px; cursor: pointer;}
+.success-case .case-content1 li:hover {color: #f7b56c; cursor: pointer;}
+.success-case .tabs-nav ul.tabs-title li.cur {background: #fff; color: #f7b56c;}
+.success-case .tabs-content .case-header {position: relative; padding-left: 30px; margin-bottom: 60px; overflow: hidden;}
+.success-case .tabs-content .case-header > div {display: inline-block; vertical-align: middle;}
+.success-case .case-header .case-link {position: absolute; right: 80px; top: 20px;}
+.success-case .case-header .case-link a {color: #666; font-size: 14px;}
+.success-case .case-header .case-link a:hover {color: #4eb6ff;}
+.success-case .case-logo {width: 26%; height: 60px;}
+.success-case .case-subject {font-size: 24px; color: #333;}
+.success-case .tabs-content .case-content1 > div {display: inline-block; vertical-align: top;}
+.success-case .tabs-content .content-left {width: 27%; margin-right: 30px;}
+.success-case .tabs-content .content-left > img {width: 250px; height: 270px;}
+.success-case .tabs-content .content-right {width: 60%;}
+.success-case .content-right > div {margin-bottom: 20px; display: block;}
+.success-case h3 {font-size: 16px!important; color: #333;}
+.success-case .content-right > div > p {font-size: 14px; color: #999;}
+.success-case .content-right > .content4 div {display: inline-block; vertical-align: top; margin-right: 20px;}
+.success-case .content-right > .content4 div span:last-child {font-size: 18px; color: #ff9023;}
+.success-case .tabs-content .case-res {margin-left: 0; margin-top:30px;}
+.success-case .tabs-content .case-res > div {display: inline-block; vertical-align: middle; margin-left: 70px; margin-right: 70px; text-align: center;}
+.success-case .tabs-content .case-res img {width: 60px; height: 60px; border-radius: 50%; margin: 0 auto; border: 1px solid #eee;}
+.success-case .case-res .res-title {color: #333; font-size: 14px; margin-top: 6px;}
+.success-case .case-res .res-id {color: #999; font-size: 12px;}
+.success-case .case-res > div > div:last-child {margin-top: 10px;}
+.success-case .case-res > div > div:last-child a {border: 1px solid #eee; padding: 3px 5px; color: #999; font-size: 12px; border-radius: 3px;}
+.success-case .case-res > div > div:last-child a:hover {border: 1px solid #f7b56c; color: #f7b56c;}
+.other-banner {width: 1200px; margin: 0 auto; padding-top: 60px;}
+
+/* ä¸‹å•æµç¨‹æ¨¡å— */
+.order-process {padding-bottom: 100px;}
+.order-process h2 {font-size: 36px; color: #333;}
+.order-process .process {position: relative; background: url("http://www.maoyanmedia.com/static/image/order-process.jpg") no-repeat; width: 985px; margin: 0 auto; font-size: 18px; color: #999; margin-top: 90px; height: 238px;}
+.order-process .process .process-step1 {position: absolute; left: 8px; bottom: 5px;}
+.order-process .process .process-step2 {position: absolute; left: 221px; bottom: 5px;}
+.order-process .process .process-step3 {position: absolute; left: 436px; bottom: 5px;}
+.order-process .process .process-step4 {position: absolute; left: 653px; bottom: 5px;}
+.order-process .process .process-step5 {position: absolute; left: 892px; bottom: 5px;}
+.order-process .reg-info {font-size: 28px; margin-top: 100px; margin-bottom: 50px;}
+.order-process .reg-button {display: block; margin: 0 auto; width: 240px; height: 57px;}
+
+/* æŽ¨å¹¿é¡µé¢å›¾æ ‡ */
+.ruanwen-celue-icon, .ruanwen-shaluo-icon, .ruanwen-duibi-icon, .ruanwen-feiji-icon, .ruanwen-shangsheng-icon,
+.ruanwen-SEO-icon, .ruanwen-huangguan-icon, .ruanwen-toufang-icon, .weixin-area-icon, .weixin-baoguang-icon,
+.weixin-guanzhu-icon, .weixin-hudong-icon, .weixin-dianji-icon, .weixin-fenxiang-icon, .weixin-user-icon,
+.weixin-network-icon, .weixin-hobby-icon, .friend-desc-icon, .friend-small-area-icon, .friend-shoru-icon,
+.friend-hobby1-icon, .friend-data-icon, .friend-apcu-icon, .friend-huangguan-icon, .friend-money-icon,
+.friend-area-icon, .friend-user-icon, .friend-light-icon, .friend-line-right-icon, .weibo-top-icon,
+.weibo-bottom-icon, .weibo-left-icon, .weibo-right-icon, .weibo-arrow-icon, .weibo-arrow1-icon {display: inline-block; vertical-align: middle; background:url(http://www.maoyanmedia.com/static/image/all-sprite.png)  no-repeat;}
+
+.ruanwen-celue-icon {height:22px;width:22px;background-position:-207px -36px;}
+.ruanwen-shaluo-icon {height:36px;width:28px;background-position:-1px -32px;}
+.ruanwen-duibi-icon {height:34px;width:34px;background-position:-301px -1px;}
+.ruanwen-feiji-icon {height:35px;width:35px;background-position:-351px -38px;}
+.ruanwen-shangsheng-icon {height:21px;width:36px;background-position:-299px -45px;}
+.ruanwen-SEO-icon {height:26px;width:40px;background-position:-352px -1px;}
+.ruanwen-huangguan-icon {height:33px;width:40px;background-position:-273px -73px;}
+.ruanwen-toufang-icon {height:16px;width:77px;background-position:-178px 0;}
+
+.weixin-area-icon {height:38px;width:29px;background-position:-79px -122px;}
+.weixin-baoguang-icon {height:32px;width:32px;background-position:-244px -32px;}
+.weixin-guanzhu-icon {height:32px;width:32px;background-position:0 -83px;}
+.weixin-hudong-icon {height:32px;width:32px;background-position:-42px -81px;}
+.weixin-dianji-icon {height:32px;width:32px;background-position:-87px -79px;}
+.weixin-fenxiang-icon {height:32px;width:32px;background-position:-130px -78px;}
+.weixin-user-icon {height:36px;width:34px;background-position:-121px -120px;}
+.weixin-network-icon {height:36px;width:36px;background-position:-174px -73px;}
+.weixin-hobby-icon {height:33px;width:40px;background-position:-222px -118px;}
+
+.friend-desc-icon {height:18px;width:14px;background-position:0 0;}
+.friend-small-area-icon {height:20px;width:14px;background-position:-22px 0;}
+.friend-shoru-icon {height:18px;width:16px;background-position:-43px 0;}
+.friend-hobby1-icon {height:16px;width:18px;background-position:-65px 0;}
+.friend-data-icon {height:18px;width:18px;background-position:-90px 0;}
+.friend-apcu-icon {height:20px;width:20px;background-position:-115px 0;}
+.friend-huangguan-icon {height:17px;width:22px;background-position:-145px 0;}
+.friend-money-icon {height:36px;width:28px;background-position:-42px -126px;}
+.friend-area-icon {height:38px;width:29px;background-position:0 -126px;}
+.friend-user-icon {height:36px;width:34px;background-position:-165px -120px;}
+.friend-light-icon {height:38px;width:36px;background-position:-223px -74px;}
+.friend-line-right-icon {height:18px;width:114px;background-position:-335px -88px;}
+
+.weibo-top-icon {height:33px;width:25px;background-position:-40px -30px;}
+.weibo-bottom-icon {height:29px;width:26px;background-position:-79px -30px;}
+.weibo-left-icon {height:20px;width:31px;background-position:-118px -36px;}
+.weibo-right-icon {height:23px;width:32px;background-position:-164px -34px;}
+.weibo-arrow-icon {height:72px!important;width:84px!important;background-position:-403px 0;}
+.weibo-arrow1-icon {height:39px!important;width:93px!important;background-position:-276px -117px;}
